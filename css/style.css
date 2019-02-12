@@ -69,9 +69,14 @@
 
 a {  
   color: white;
-        
-
 }
+
+  a:focus {
+  color: #999999;
+  }
+  a:hover {
+  color:rgb(219, 148, 41);
+  }
 
 body {
   margin-left: 5%;
@@ -133,7 +138,7 @@ body {
     padding-bottom: 0;
     margin-top: 10%;
     background: transparent;
-    color: white;   
+    color:white;   
     font-size: 18px;
     /* text-decoration: underline; */
     border-radius: 260px;
@@ -142,9 +147,12 @@ body {
 
 .button:hover {
   background-color: rgb(127, 103, 67);
-  opacity: 5;
+  opacity: 5;  
 }  
-.button:click {
+.button:focus {
+  background-color: rgb(127, 103, 67);
+}
+.button:active {
   background-color: rgb(127, 103, 67);
 }
 .clickme {
@@ -157,14 +165,16 @@ body {
   background: linear-gradient(100deg,rgb(127, 103, 67), grey 80%, whitesmoke);
 
 }
-
+.tag {
+  color: rgb(122, 102, 48);
+}
 .black {
    color: rgb(158, 127, 80);
    text-decoration: underline;
    font-size: 16px;
 }
 .dark {
-   color: ivory;
+   color: white;
 }
 .sharp{
   color: black;
