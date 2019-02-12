@@ -1,2 +1,2 @@
-# SowmyaAji.github.io
-This is my work portfolio
+# sowmya.github.io
+my work portfolio
