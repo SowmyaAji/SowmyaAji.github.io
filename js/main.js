@@ -1,11 +1,7 @@
 $(document).ready(function () {
-    $("#name").fadeOut(15000)
-    $("#work").delay(14900).hide().fadeIn(500)
+    $("#name").fadeOut(10000)
+    $("#work").delay(9900).hide().fadeIn(350)
 })
-
-
-
-
 
 $(document).ready(function () {
     $('.fade').slick({

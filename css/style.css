@@ -140,7 +140,13 @@ body {
 
   }
 
-  
+.button:hover {
+  background-color: rgb(127, 103, 67);
+  opacity: 5;
+}  
+.button:click {
+  background-color: rgb(127, 103, 67);
+}
 .clickme {
     text-decoration: underline;
     color: white;
@@ -148,16 +154,27 @@ body {
 }
 
 .design {
-  background: linear-gradient(100deg, #1f92d1, grey 80%, whitesmoke);
+  background: linear-gradient(100deg,rgb(127, 103, 67), grey 80%, whitesmoke);
 
 }
 
 .black {
-   color:  #1f92d1;
+   color: rgb(158, 127, 80);
    text-decoration: underline;
    font-size: 16px;
 }
+.dark {
+   color: ivory;
+}
+.sharp{
+  color: black;
+}
+.visible {
+  font-weight: bold;
+  font-size:18px;
+  color: yellow;
 
+}
 .resume {
   padding-left: 5%;
   padding-bottom: 5%;
@@ -167,6 +184,7 @@ body {
 .left {
   float: left;
   padding: 0 20px 20px 0;
+  
  }
  .right {
   float: right;
