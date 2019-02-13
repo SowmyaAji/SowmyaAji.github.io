@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#name").fadeOut(7000)
-    $("#work").delay(6800).hide().fadeIn(300)
+    $("#work").delay(6800).hide().fadeIn(950)
 })
 
 $(document).ready(function () {

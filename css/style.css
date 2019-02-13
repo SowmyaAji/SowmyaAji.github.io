@@ -47,7 +47,7 @@
     position: fixed;
     align-items: center;
     justify-content: center; 
-    top: 20%;
+    top: 40%;
     left: 55%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
@@ -123,12 +123,8 @@ body {
     margin-left: 60px;
     font-style: italic;
   }
-.up {
-  margin-top: 2rem;
-}
+
   .custom  {
-    margin-top: 5rem;
-    margin-left: 3rem;
     padding-top:10px;
     background: transparent;
     color: white;   
