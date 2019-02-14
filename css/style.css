@@ -6,11 +6,16 @@
   }
 
 .footer {
-    height: 50px;
+   
     margin-right: 0;
     background-color: transparent;
-
-  }
+    position: absolute;
+    
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+  
 
 .fa{
     font-size: 30px;    
@@ -134,6 +139,11 @@ body {
 .extn-button {
   background-color: black;
 }
+.close-button {
+  color: black;
+  position: fixed;
+
+}
 .button:hover {
   background-color: grey; 
   
@@ -151,8 +161,7 @@ body {
 }
 
 .design {
-  background: transparent; 
-  
+ background: transparent;  
 
 }
 .tag {
@@ -185,6 +194,16 @@ body {
   padding: 0 20px 20px 0;
   
  }
+
+.simple1 {
+  background-color: black;
+  color: white;
+}
+
+.left1 {
+
+   float:left;
+}
  .right {
   float: right;
   padding: 0 20px 20px 0;
@@ -196,8 +215,15 @@ body {
   padding-right: 10%;
   background-color: black;
   color: white;
-  margin-top: 2.5rem;
+ 
 }
+
+.projects {
+  padding-top: 1rem;
+ 
+  
+}
+
 
 .linked {
    border-radius: 50%;

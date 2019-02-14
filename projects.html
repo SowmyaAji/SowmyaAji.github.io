@@ -28,45 +28,48 @@
 
 
 <header class="projects-header">
+       
     
 </header>
-
 <body>
+
     <div class="projects-main" id="top">
-        <div class="row">
-        
-        <ul class="menu simple right">
+       <div class="projects"> <ul class="menu simple right">
             <li><a href="about.html"><img src="images/avataars.png" height="30px" width="30px" ;></a></li>
             <li><a href="resume.html"><i class="far fa-file-alt" aria-hidden="true" style="font-size:30px; color: white"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sowmya-aji/" target="_blank"><i class="fab fa-linkedin"
+            <li><a href="https://www.linkedin.com/in/sowmya-aji/"><i class="fab fa-linkedin"
                         aria-hidden="true" style="font-size:30px; color: white"></i></a></li>
-            <li><a href="https://github.com/SowmyaAji" target="_blank"><i class="fab fa-github" aria-hidden="true"
+            <li><a href="https://github.com/SowmyaAji"><i class="fab fa-github" aria-hidden="true"
                         style="font-size:30px; color: white;"></i></a></li>
-            <li><a href="mailto:sowmya.aji@gmail.com" target="_blank"><i class="fas fa-envelope-square" aria-hidden="true"
+            <li><a href="mailto:sowmya.aji@gmail.com"><i class="fas fa-envelope-square" aria-hidden="true"
                         style="font-size:30px; color: white;"></i></a></li>
-        </ul>
-        <a href="code.html" class="right">See other projects</a>
+        </ul></div>
+        
+        
+        <a href="code.html" class="right">All Projects</a>
         <a href="index.html" class="black" style:"float: left"><img src="images/Sowmya.jpeg" class="linked left"</a>
-    </div>
         <hr>
+    
         <div id="getJustice">
-            <a href="http://getjustice.herokuapp.com" target="_blank" class="black">
+       
+        
+        
+            <a href="http://getjustice.herokuapp.com" class="black">
                 <h2 class="white"><strong>getJustice</strong></h2>
-            </a><a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/" target="_blank" class="extn-button"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
+            </a><a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/"  class="extn-button"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
             <br><br>
             <h4>What the project is about:</h4>
             <br>    
             <p>Very often, when you are scrolling through your social media page, you come across some instance of
                 injustice that you feel very strongly about. Till now, all you have been able to do is retweet, comment
                 or share the instance, but you have not been able to do anything concrete to get action on it or get
-                the authorites to address the problem. We, the <strong>team</strong> -- <a href="https://www.linkedin.com/in/tiana-horn/"
-                    target="_blank" class="black">Tiana Horn</a>, <a href="https://www.linkedin.com/in/david-sedgwick/"
-                    target="_blank" class="black">David Sedgwick</a> and <a href="https://www.linkedin.com/in/sowmya-aji/"
-                    target="_blank" class="black"> I </a> -- came up with this solution to get action, as our final
+                the authorites to address the problem. We, the <strong>team</strong> -- <a href="https://www.linkedin.com/in/tiana-horn/" class="black">Tiana Horn</a>, <a href="https://www.linkedin.com/in/david-sedgwick/" class="black">David Sedgwick</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" class="black"> I </a> -- came up with this solution to get action, as our final
                 project at our
-                12-week bootcamp at <a href="https://www.momentumlearn.com/" target="_blank" class="black">Momentum</a>
+                12-week bootcamp at <a href="https://www.momentumlearn.com/" class="black">Momentum</a>
                 in Durham.</p>
+                <br>
             <h4>The Team</h4>
+            <br>
             <img src="images/Tiana.jpeg" class="linked"> <img src="images/Dave.jpeg" class="linked"> <img src="images/Sowmya.jpeg"
                 class="linked">
             <br><br>
@@ -82,7 +85,8 @@
                     <a href="#how" class="read-more black">
                         Read More</a>
                 </p>
-
+                <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
                 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
                     <div class="orbit-wrapper">
                         <div class="orbit-controls">
@@ -130,8 +134,8 @@
 
 
 
-            <h5 id="how" class="readmore">What we have done:</h5>             
-             <p>We have set up a web app <a href="http://getjustice.herokuapp.com" target="_blank" class="black">getJustice</a>
+            <h4 id="how" class="readmore">What we have done:</h4>             
+             <p>We have set up a web app <a href="http://getjustice.herokuapp.com"  class="black">getJustice</a>
                 where you can download our Chrome extension with our button. After that, any time you see an instance
                 of injustice on a webpage and
                 want
@@ -154,7 +158,7 @@
                 
                 <br><br>
 
-            <h5>How we did it:</h5>
+            <h4>How we did it:</h4>
             <p>We learnt how to set up a Chrome extension first. Here is a bit of the code we used, which is
                 essentially
                 JavaScript. We created a manifest.json file and a background.js file. Then we put in this code to get
@@ -182,7 +186,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         </pre>
             <br>
             <br>
-            <p>We then used JavaScript to pre-fill our Django form with email addresses of the concerned authorities
+            <p>We used JavaScript to pre-fill our Django form with email addresses of the concerned authorities
                 and a
                 basic text (which can be edited). The screenshot was already attached to this form, but the user also
                 has
@@ -203,24 +207,24 @@ def screenshot_decoder(dataUrl):
 </code>
 </pre>
 
-                <a href="https://github.com/getJustice/getJustice" target="_blank" class="black left">See the full
-                    code for this project</a>
-                <a href="code.html" class="black left">See other projects</a>
-                <a href="projects.html#top" class="black right">Go to page top</a>
-                <a href="index.html" class="black right">Go to home page</a>
+                <a href="https://github.com/getJustice/getJustice"  class="black left">Full
+                    Code</a>
+                <a href="code.html" class="black left">Other Projects</a>
+                <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
                 <hr>
         </div>
         <div id="Snippet">
-            <a href="https://damp-island-36297.herokuapp.com/" target="_blank" class="black">
+            <a href="https://damp-island-36297.herokuapp.com/" class="black">
                 <h2 class="white"><strong>Snip^pet</strong></h2>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
             <p>Often, we wish there was a website exclusively to list easily reused code snippets for our applications.
-                Our team -- <a href="https://www.linkedin.com/in/crystal-ramirez-b0912876/" target="_blank" class="black">Crystal
-                    Ramirez</a> ,<a href="https://www.linkedin.com/in/david-sedgwick/" target="_blank" class="black">
-                    Dave Sedgwick </a> ,<a href="https://www.linkedin.com/in/deanna-jacobs/" target="_blank" class="black">
-                    Deanna Jacobs</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" target="_blank" class="black">
+                Our team -- <a href="https://www.linkedin.com/in/crystal-ramirez-b0912876/" class="black">Crystal
+                    Ramirez</a> ,<a href="https://www.linkedin.com/in/david-sedgwick/" class="black">
+                    Dave Sedgwick </a> ,<a href="https://www.linkedin.com/in/deanna-jacobs/"  class="black">
+                    Deanna Jacobs</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" class="black">
                     I </a>-- thought it
                 would be really useful to
                 set up such a website, where code can be shared, copied, further edited if needed and reposted. We also
@@ -241,7 +245,8 @@ def screenshot_decoder(dataUrl):
                 page, making Ajax calls to ensure that the page load time is not high. On the frontend, we used
                 Bootstrap, Bulma and vanilla CSS to design the page and worked extensively with modals. We also used
                 Django Gravatar and template tags to create images to represent our users.</p>
-
+    <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
             <h4>How we did it:</h4>
             <p>We used the Mimesis library to create fake user data for development purposes. To create code snippets,
                 we used individual files of each type of code. For development, we limited the code languages to
@@ -308,16 +313,16 @@ $.get("/api/my_snippets/").then(function (snippets) {
                 </pre>
                 </p>
 
-                <a href="https://github.com/momentum-cohort-2018-10/w8-group-project-2-csdd_snipe" target="-blank"
-                    class="black left">See the full code for this project</a>
-                <a href="code.html" class="black left">See other projects</a>
-                <a href="projects.html#top" class="black right">Go to page top</a>
-                <a href="index.html" class="black right">Go to home page</a>
+                <a href="https://github.com/momentum-cohort-2018-10/w8-group-project-2-csdd_snipe" 
+                    class="black left">Full code</a>
+                <a href="code.html" class="black left">Other Projects</a>
+                <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
                 <hr>
         </div>
         
         <div id="Singalong">
-            <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji" target="_blank" class="black">
+            <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji"  class="black">
                 <h2 class="white"><strong>Sing Along</strong></h2>
             </a>
             <br><br>
@@ -354,14 +359,14 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
                 </code>    
                 </pre>
             </p>
-            <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji" target="-blank" class="black left">See the full code for this project</a>
-            <a href="code.html" class="black left">See other projects</a>
-            <a href="projects.html#top" class="black right">Go to page top</a>
-                <a href="index.html" class="black right">Go to home page</a>
+            <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji"  class="black left">Full Code</a>
+            <a href="code.html" class="black left">Other Projects</a>
+            <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
             <hr>
         </div>
         <div id="Pathfinder">
-        <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" target="_blank" class="black">
+        <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" class="black">
         <h2 class="white"><strong>Pathfinder</strong></h2>
             </a>
             <br><br>
@@ -391,7 +396,8 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
             </code>
             </pre></p>
 
-            
+            <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
     <h4>How I did it</h4>
 
       <div class = "orbit" role = "region" data-orbit data-use-m-u-i = "false">
@@ -501,11 +507,11 @@ find_path(elevation_data)
             </li>
          </ul>
          <br>
-        <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" target="-blank" class="black left">See the full code for this project</a>
-            <a href="code.html" class="black left">See
-                other projects</a>
-            <a href="projects.html#top" class="black right">Go to page top</a>
-                <a href="index.html" class="black right">Go to home page</a>
+        <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" class="black left">Full Code</a>
+            <a href="code.html" class="black left">
+                Other Projects</a>
+            <a href="projects.html#top" class="black right">Page Top</a>
+                <a href="index.html" class="black right">Home</a>
             <hr>         
       </div>
 
