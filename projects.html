@@ -51,7 +51,7 @@
         <hr>
         <div id="getJustice">
             <a href="http://getjustice.herokuapp.com" target="_blank" class="black">
-                <h2><strong>getJustice</strong></h2>
+                <h2 class="white"><strong>getJustice</strong></h2>
             </a><a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/" target="_blank" class="extn-button"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -212,7 +212,7 @@ def screenshot_decoder(dataUrl):
         </div>
         <div id="Snippet">
             <a href="https://damp-island-36297.herokuapp.com/" target="_blank" class="black">
-                <h2><strong>Snip^pet</strong></h2>
+                <h2 class="white"><strong>Snip^pet</strong></h2>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -318,7 +318,7 @@ $.get("/api/my_snippets/").then(function (snippets) {
         
         <div id="Singalong">
             <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji" target="_blank" class="black">
-                <h2><strong>Singalong</strong></h2>
+                <h2 class="white"><strong>Singalong</strong></h2>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -362,7 +362,7 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
         </div>
         <div id="Pathfinder">
         <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" target="_blank" class="black">
-                <h2><strong>Pathfinder</strong></h2>
+        <h2 class="white"><strong>Pathfinder</strong></h2>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -462,7 +462,8 @@ for row in range(len(elevation_data)):
             <li class = "orbit-slide">
                <div>
                   <h5 class = "text-center">How to plot a path</h5>
-                  <p class = "text-center"><img src="images/elevation_map 2.png" class="left">I evidently needed to use the same put pixel method to plot the path also, so I gave it a different color, this time red. I figured out the formula (after a very long, strained night) of how to get the pixel to go forward. x+1, was the step forward, with y still equal to 0. The other two options were: to go to the row above, it was  (x+1, y+1), to go to the row below, it was (x+1, y-1). The path forward was one of the three and it had to be with the lowest elevation. There was problem in that when the path was either at the top of the image or at the bottom, one of the rows (either up or down) was not an option, as it went out of the map. I ended up importing sys and using infinity to ensure the path did not go out.  </p>
+                  <img src="images/elevation_map 2.png" class="left">
+                  <p class = "text-center">I evidently needed to use the same put pixel method to plot the path also, so I gave it a different color, this time red. I figured out the formula to get the pixel to go forward: x+1, with y equal to 0. The options were: to go to the row above (x+1, y+1), to go to the row below, (x+1, y-1). The path was the one of the three with the lowest elevation. There was a problem  when the path was either at the top of the image or at the bottom, as one of the rows (either up or down) was not an option, as it went out of the map. I ended up importing sys and using infinity to ensure the path did not go out.  </p>
                </div>
             </li>
 
