@@ -32,9 +32,12 @@
     
 </header>
 <body>
-
+    
     <div class="projects-main" id="top">
-       <div class="projects"> <ul class="menu simple right">
+        <div class="projects"> 
+       <a href="index.html" class="black" style:"float: left"><img src="images/Sowmya.jpeg" class="linked left"</a>
+       <ul class="menu simple right">
+            <li><a href="code.html" class="right">All Projects</a></li>
             <li><a href="about.html"><img src="images/avataars.png" height="30px" width="30px";></a></li>
             <li><a href="resume.html"><i class="far fa-file-alt" aria-hidden="true" style="font-size:30px; color: white"></i></a></li>
             <li><a href="https://www.linkedin.com/in/sowmya-aji/"><i class="fab fa-linkedin"
@@ -43,20 +46,13 @@
                         style="font-size:30px; color: white;"></i></a></li>
             <li><a href="mailto:sowmya.aji@gmail.com"><i class="fas fa-envelope-square" aria-hidden="true"
                         style="font-size:30px; color: white;"></i></a></li>
-        </ul></div>
-        
-        
-        <a href="code.html" class="right">All Projects</a>
-        <a href="index.html" class="black" style:"float: left"><img src="images/Sowmya.jpeg" class="linked left"</a>
+        </ul>
         <hr>
-    
+        </div> 
         <div id="getJustice">
-       
-        
-        
             <a href="http://getjustice.herokuapp.com" class="black">
-                <h2 class="white"><strong>getJustice</strong></h2>
-            </a><a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/"  class="extn-button"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
+                <h3 class="white">getJustice</h3></a>
+            <a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/"  class="extn-button"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
             <br><br>
             <h4>What the project is about:</h4>
             <br>    
@@ -70,8 +66,8 @@
                 <br>
             <h4>The Team</h4>
             <br>
-            <img src="images/Tiana.jpeg" class="linked"> <img src="images/Dave.jpeg" class="linked"> <img src="images/Sowmya.jpeg"
-                class="linked">
+            <a href="https://www.linkedin.com/in/tiana-horn/"><img src="images/Tiana.jpeg" class="linked"> </a>  <a href="https://www.linkedin.com/in/david-sedgwick/"><img src="images/Dave.jpeg" class="linked"></a> <a href="https://www.linkedin.com/in/sowmya-aji/"><img src="images/Sowmya.jpeg"
+                class="linked"></a>
             <br><br>
             <div class="clearfix">
 
@@ -217,7 +213,7 @@ def screenshot_decoder(dataUrl):
         </div>
         <div id="Snippet">
             <a href="https://damp-island-36297.herokuapp.com/" class="black">
-                <h2 class="white"><strong>Snip^pet</strong></h2>
+                <h3 class="white"><strong>Snip^pet</strong></h3>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -233,9 +229,9 @@ def screenshot_decoder(dataUrl):
                 to be able to have list of code snippets that they wished to keep under their own account for quick
                 reuse and for polishing. Our solution: Snip^pet.</p>
             <h4>The Team</h4>
-            <img src="images/Crystal.jpeg" alt="Crystal Ramirez" class="linked"> <img src="images/Dave.jpeg" alt="David Sedgwick"
-                class="linked"> <img src="images/Deanna.jpeg" alt="Deanna Jacobs" class="linked"> <img src="images/Sowmya.jpeg"
-                alt="Sowmya Aji" class="linked">
+            <a href="https://www.linkedin.com/in/crystal-ramirez-b0912876/"><img src="images/Crystal.jpeg" alt="Crystal Ramirez" class="linked"></a>  <a href="https://www.linkedin.com/in/david-sedgwick/"><img src="images/Dave.jpeg" alt="David Sedgwick"
+                class="linked"></a> <a href="https://www.linkedin.com/in/deanna-jacobs/"><img src="images/Deanna.jpeg" alt="Deanna Jacobs" class="linked"></a> <a href="https://linkedin.com/in/sowmya-aji/"><img src="images/Sowmya.jpeg"
+                alt="Sowmya Aji" class="linked"></a>
 
             <br><br>
             <h4>What we did:</h4>
@@ -326,7 +322,7 @@ $.get("/api/my_snippets/").then(function (snippets) {
         
         <div id="Singalong">
             <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji"  class="black">
-                <h2 class="white"><strong>Sing Along</strong></h2>
+                <h3 class="white"><strong>Sing Along</strong></h3>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
@@ -336,7 +332,7 @@ $.get("/api/my_snippets/").then(function (snippets) {
                 the result.</p>
             <h4>The Team</h4>
             <p>This was a solo project
-            <img src="images/Sowmya.jpeg" class="linked"></p>
+            <a href="https://linkedin.com/in/sowmya-aji/"><img src="images/Sowmya.jpeg" class="linked"></a></p>
             <br>
             <br>
             <h4>How I did it</h4>
@@ -370,14 +366,14 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
         </div>
         <div id="Pathfinder">
         <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" class="black">
-        <h2 class="white"><strong>Pathfinder</strong></h2>
+        <h3 class="white"><strong>Pathfinder</strong></h3>
             </a>
             <br><br>
             <h4>What the project is about:</h4>
-            <p>How are maps plotted? By using elevations and depths. How does one find a path through the mountians? Well, obviously, one takes the lowest elevation and goes. Yes, true. But how to get the computer to figure out which is the lowest elevation and take that path? That was the challenged that I faced, by developing a Python program for the app, the Pathfinder.</p>
+            <p>How are maps plotted? By using elevations and depths. How does one find a path through the mountians? Well, obviously, one takes the lowest elevation and goes. Yes, true. But how to get the computer to figure out which is the lowest elevation and take that path? That was the challenge that I faced, by developing a Python program for the app, the Pathfinder.</p>
             <h4>The Team</h4>
             <p>This was a solo project
-            <img src="images/Sowmya.jpeg" class="linked"></p>
+            <a href="https://linkedin.com/in/sowmya-aji/"><img src="images/Sowmya.jpeg" class="linked"></a></p>
             <br><br>
             <h4>What I did</h4>
             <p>I was given a ginormous list of elevations as a text file, like this:</p>
@@ -524,8 +520,7 @@ find_path(elevation_data)
     </div>
     <div>
         <footer>
-            <a href="code.html" class="black">See
-                other projects</a>
+           
         </footer>
     </div>
 
