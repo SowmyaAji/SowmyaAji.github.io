@@ -47,6 +47,9 @@
   color: darkslategray;
   transition: color 0.3s ease-in;
  }
+
+
+
 h1,h2 {
   color: black;
 }
@@ -231,6 +234,7 @@ header {
 
 .projects {
   padding-top: 1rem;
+  
  
   
 }
