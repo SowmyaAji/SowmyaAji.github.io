@@ -7,12 +7,12 @@
 
 .footer {
    
-    margin-right: 1%;
+  
     background-color: transparent;
     position: absolute;
-    
+    padding-right: 10%;
     bottom: 1%;
-    height: 50px;
+    height: 60px;
     width: 100%;
 }
   
@@ -21,7 +21,7 @@
     font-size: 30px;    
   }
 .social-footer {
-  padding: 1rem;  
+  padding: 2rem;  
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,9 @@
   color: darkslategray;
   transition: color 0.3s ease-in;
  }
-
+h1,h2 {
+  color: black;
+}
 
 .dark { color: black;}
 
@@ -108,12 +110,6 @@ body {
    border-width: 2px;
  }
 
-li {
-
-	display: inline-block;
-	padding: 10px;
-
-}
 header {
 
 	background: transparent;
@@ -264,7 +260,7 @@ header {
 .white {
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  
 }
 pre {
   white-space: pre-wrap;       /* css-3 */
