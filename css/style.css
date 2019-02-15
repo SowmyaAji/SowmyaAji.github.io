@@ -175,7 +175,10 @@ header {
 }
 
 .design {
- background: transparent;  
+ background: transparent;
+ padding: 7%;  
+ text-align: justify;
+ text-justify: inter-word;
 
 }
 .tag {
