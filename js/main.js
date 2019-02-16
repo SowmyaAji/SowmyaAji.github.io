@@ -1,7 +1,10 @@
 $(".custom").on('click', function () {
-    $("#name").hide()
+    $("#name").hide();
 })
 
+$(".close-button").on('click', function () {
+    $("#name").show();
+})
 $(document).ready(function () {
     $('.fade').slick({
         dots: false,

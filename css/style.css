@@ -51,8 +51,16 @@
 
 
 h1,h2 {
-  color: black;
+  color: white;  
 }
+@media (max-width: 1000px) {
+
+  h1, h2 {
+        color: black;
+   }
+
+}
+
 
 .dark { color: black;}
 
