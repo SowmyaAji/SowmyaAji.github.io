@@ -143,16 +143,8 @@ header {
     /* text-decoration: underline; */
     border-radius: 260px;
   }
-  .custom1 {
-    margin-top:2%;
-    padding-top:0;
-    padding-bottom:0;
-    background: transparent;
-    color: black;   
-    font-size: 20px;
-    float: right;
-    border-radius: 260px;
-  }
+ 
+  
   .extn-button {
     background-color: black;
   }
@@ -180,7 +172,10 @@ header {
 
 .design {
  background: transparent;
- padding: 7%;  
+ padding-left: 10%;
+ padding-right: 10%;
+ padding-top: 5%;
+ padding-bottom: 5%;  
  text-align: justify;
  text-justify: inter-word;
 
@@ -189,10 +184,15 @@ header {
   color: rgb(122, 102, 48);
 }
 .black {
-   color: rgb(244, 200, 66);
-   
+   color: rgb(244, 200, 66); 
    font-size: 16px;
 }
+@media (max-width: 650px) { 
+ .black {
+   color: white
+ }
+}
+
 .dark {
    color: white;
 }
@@ -229,7 +229,11 @@ header {
   float: right;
   padding: 0 20px 20px 0;
  }
-
+ @media (max-width: 650px){
+   .right {
+     float: left;
+   }
+ }
 .projects-main {
   padding-top: 5%;
   padding-left: 10%;
