@@ -193,6 +193,12 @@ header {
    
    font-size: 16px;
 }
+
+@media (max-width: 1000px) {
+ .black {
+        color: white;
+   }
+
 .dark {
    color: white;
 }
@@ -229,7 +235,10 @@ header {
   float: right;
   padding: 0 20px 20px 0;
  }
-
+ @media (max-width: 1000px) {
+  .right {
+         float: left;
+    }
 .projects-main {
   padding-top: 5%;
   padding-left: 10%;
