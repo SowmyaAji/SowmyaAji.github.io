@@ -221,7 +221,8 @@ button {
   border: 0;
   border-radius: 0;
   background: transparent;
-  line-height: 1;
+
+  line-height: 5;
   cursor: auto; }
   [data-whatinput='mouse'] button {
     outline: 0; }
@@ -4623,7 +4624,7 @@ select {
   margin-bottom: 0;
   padding: 1rem;
   background-color: rgba(10, 10, 10, 0.5);
-  color: #fefefe; }
+  color:blue; }
 
 .orbit-previous, .orbit-next {
   position: absolute;
@@ -4633,7 +4634,7 @@ select {
           transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
-  color: #fefefe; }
+  color: blue; }
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
     outline: 0; }
   .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
