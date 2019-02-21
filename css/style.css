@@ -53,7 +53,7 @@
 h1,h2 {
   color: white;  
 }
-@media (max-width: 650px) {
+@media (max-width: 640px) {
 
   h1, h2 {
         color: black;
@@ -61,11 +61,12 @@ h1,h2 {
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
 .color {
   color: black;
 }
 }
+
 
 .dark { color: black;}
 
@@ -75,7 +76,7 @@ h1,h2 {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 25%;  
+    margin-top: 15%;  
   }
 
 
@@ -180,7 +181,6 @@ header {
  background: transparent;
  padding-left: 10%;
  padding-right: 10%;
- padding-top: 5%;
  padding-bottom: 5%;  
  text-align: justify;
  text-justify: inter-word;
@@ -193,7 +193,7 @@ header {
    color: rgb(244, 200, 66); 
    font-size: 16px;
 }
-@media (max-width: 650px) { 
+@media (max-width: 640px) { 
  .black {
    color: white
  }
@@ -235,7 +235,7 @@ header {
   float: right;
   padding: 0 20px 20px 0;
  }
- @media (max-width: 650px){
+ @media (max-width: 640px){
    .right {
      float: left;
    }
@@ -259,6 +259,14 @@ header {
    border-radius: 50%;
    height: 100px;
    width: 100px;
+}
+@media (max-width: 640px) {
+.linked {
+  border-radius: 50%;
+   height: 60px;
+   width: 60px;
+
+}
 }
 
 .linked1 {
