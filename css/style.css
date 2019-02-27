@@ -69,6 +69,14 @@ nav {
   color: white;
 }
 
+@media (max-width: 340px){
+
+  .tagline {
+    color: maroon;
+  }
+}
+
+
 h1,h2 {
   color: rgb(104, 244, 66);  
 }
@@ -81,6 +89,7 @@ h1,h2 {
     font-size: 1.5rem;
     color: black;
  }
+ 
 
 }
 
