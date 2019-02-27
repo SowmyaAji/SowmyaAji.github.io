@@ -57,8 +57,8 @@
             <br>    
             <p>Very often, when you are scrolling through your social media page, you come across some instance of
                 injustice that you feel very strongly about. Till now, all you have been able to do is retweet, comment
-                or share the instance, but you have not been able to do anything concrete to get action on it or get
-                the authorites to address the problem. We, the <strong>team</strong> -- <a href="https://www.linkedin.com/in/tiana-horn/" class="black" target="_blank" rel="noopener noreferrer">Tiana Horn</a>, <a href="https://www.linkedin.com/in/david-sedgwick/" class="black" target="_blank" rel="noopener noreferrer">David Sedgwick</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" class="black" target="_blank" rel="noopener noreferrer"> I </a> -- came up with this solution to get action, as our final
+                or share the instance. You have not been able to do anything concrete to get action on it or get
+                the authorites to address the problem. We, the <strong>team</strong> -- <a href="https://www.linkedin.com/in/tiana-horn/" class="black" target="_blank" rel="noopener noreferrer">Tiana Horn</a>, <a href="https://www.linkedin.com/in/david-sedgwick/" class="black" target="_blank" rel="noopener noreferrer">David Sedgwick</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" class="black" target="_blank" rel="noopener noreferrer"> I </a> -- came up with this solution to get action against injustice, as our final
                 project at our
                 12-week bootcamp at <a href="https://www.momentumlearn.com/" class="black" target="_blank" rel="noopener noreferrer">Momentum</a>
                 in Durham.</p>
@@ -70,18 +70,17 @@
             <br><br>
             <div class="clearfix">
 
-                <h5 class="news-image-gallery-title">Demo of the getJustice app</h5>
+                <h5 class="news-image-gallery-title">The demo of the getJustice app</h5>
                 <br><br>
                 <p>
                     We presented the getJustice app at the Full Frame Theatre in the American Underground on <strong>January
-                        25, 2019</strong> to an august audience of top techies and CEOs. Technologies used: Chrome
+                        25, 2019</strong> to an august audience of top techies and CEOs. Technologies used in the project were: Chrome
                     Extension, JavaScript and jQuery, Python, Django,
                     Bootstrap, external SMTP server, Github, Heroku, Agile.
                     <a href="#how" class="read-more black">
-                        Read More</a>
+                       <strong> Read More</strong></a>
                 </p>
-                <a href="projects.html#top" class="black right">Page Top</a>
-                <a href="index.html" class="black right">Home</a>
+                
                 <br><br>
                 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
                     <div class="orbit-wrapper">
@@ -132,21 +131,21 @@
 
             <h5 id="how" class="readmore">What we have done:</h5>             
              <p>We have set up a web app <a href="http://getjustice.herokuapp.com"  class="black" target="_blank" rel="noopener noreferrer">getJustice</a>
-                where you can download our Chrome extension with our button. After that, any time you see an instance
+                where you can download our Chrome extension with the click of a button. After that, any time you see an instance
                 of injustice on a webpage and
                 want
-                to report it to the police, civic authorities or civil rights groups, you just click on our extension.
+                to report it to the police, civic authorities or civil rights groups, you can just click on our extension.
                 It
-                takes a screenshot and attaches it to an email form. You just have to choose what kind of injustice it
-                is
-                and click send. The form goes to all the concerned authorities as a report along with your screenshot.
+                takes a screenshot and attaches it to an email form. You can choose what kind of injustice it
+                is -- a civil rights violation, a hate crime or police brutality -- 
+                and click to send it, within 30 seconds of your time. The form goes to all the concerned authorities as a report along with your screenshot.
                 If
-                you wish to, you can add details in the message to be send. You can also login and add your name to the
-                report. Your email id will automatically be registered and the authorities can reply to you. Else, you
+                you wish to, you can add details in the message to be sent. You can login and add your name to the
+                report. Your email will automatically be registered and the authorities can reply to you. Or,  you
                 can
-                choose to remain anonymous, and the report will still go to the authorities, within 30 seconds of your
-                time. You can also send the report directly from our webpage itself, where you can also add an image or
+                choose to remain <strong>anonymous</strong>, and the report will still go to the authorities.You can also send the report directly from our webpage itself, where you can add an image or
                 screenshot if you want to.</p>
+                <br>
                 <p>Here is the video of the presentation of our app</p>
                 <div class="flex-video">
                 <iframe width="853" height="480" src="https://www.youtube.com/embed/MDwsOxAxF70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -157,6 +156,7 @@
             <h5>How we did it:</h5>
             <br><br>
             <img src="images/project.jpg" alt="teamwork on project">
+            <br><br>
             <p>We learnt how to set up a Chrome extension first. Here is a bit of the code we used, which is
                 essentially
                 JavaScript. We created a manifest.json file and a background.js file. Then we put in this code to get
@@ -184,11 +184,10 @@ chrome.browserAction.onClicked.addListener(function (tab) {
         </pre>
             <br>
             <br>
-            <p>We used JavaScript to pre-fill our Django form with email addresses of the concerned authorities
-                and a
-                basic text (which can be edited). The screenshot was already attached to this form, but the user also
-                has
-                the option to remove it, if needed. Finally we used Django email to send the mail out through an
+            <p>We used JavaScript to pre-fill a form built with Django, with email addresses of the concerned authorities, along with a basic
+                text (which you can edit). The screenshot taken by our extension is already attached to this form, but you also
+                have
+                the option to remove it, for privacy or other concerns. Finally we used Django's email facility to send the mail out through an
                 external
                 SMTP server on Heroku. In the process, we learnt all the ways emails can be compromised and how to put
                 security fixes in place. We also had to figure out how to convert the screenshot, which was a dataUrl
@@ -218,16 +217,16 @@ def screenshot_decoder(dataUrl):
             </a>
             <br><br>
             <h5>What the project is about:</h5>
-            <p>Often, we wish there was a website exclusively to list easily reused code snippets for our applications.
+            <p>Often, we wish there was a website exclusively to list easily reuseable code snippets for our applications.
                 Our team -- <a href="https://www.linkedin.com/in/crystal-ramirez-b0912876/" class="black" target="_blank" rel="noopener noreferrer">Crystal
                     Ramirez</a> ,<a href="https://www.linkedin.com/in/david-sedgwick/" class="black" target="_blank" rel="noopener noreferrer">
-                    Dave Sedgwick </a> ,<a href="https://www.linkedin.com/in/deanna-jacobs/"  class="black" target="_blank" rel="noopener noreferrer">
+                    David Sedgwick </a> ,<a href="https://www.linkedin.com/in/deanna-jacobs/"  class="black" target="_blank" rel="noopener noreferrer">
                     Deanna Jacobs</a> and <a href="https://www.linkedin.com/in/sowmya-aji/" class="black" target="_blank" rel="noopener noreferrer">
                     I </a>-- thought it
                 would be really useful to
-                set up such a website, where code can be shared, copied, further edited if needed and reposted. We also
+                set up such a website, where code can be shared, copied,  edited  and reposted. We also
                 wanted users
-                to be able to have list of code snippets that they wished to keep under their own account for quick
+                to easily access a list of code snippets under their own account page for quick
                 reuse and for polishing. Our solution: Snip^pet.</p>
    <br>
             <h5>The Team</h5>
