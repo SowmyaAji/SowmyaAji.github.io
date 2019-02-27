@@ -1,10 +1,13 @@
-* {
-  box-sizing: border-box;
-}
+
 .main {
     min-height: calc(100vh - 70px);
+    padding-left: 10%;
+   padding-right: 10%;
   }
 
+nav {
+  margin-left: 1%;
+}
 .footer {
    
   
@@ -14,8 +17,21 @@
     bottom: 1%;
     height: 60px;
     width: 100%;
+    
 }
+@media (max-width: 640px){
+  .footer {
+   
   
+    background-color: transparent;
+    position: absolute;
+    padding-right: 10%;
+    bottom: 3%;
+    height: 80px;
+    width: 100%;
+    
+}
+}
 
 .fa{
     font-size: 30px;    
@@ -48,20 +64,27 @@
   transition: color 0.3s ease-in;
  }
 
-
+ .me {
+  font-size: 1.5rem;
+  color: white;
+}
 
 h1,h2 {
-  color: white;  
+  color: rgb(104, 244, 66);  
 }
-@media (max-width: 640px) {
+@media (max-width: 425px) {
 
   h1, h2 {
-        color: black;
+        color: maroon;
    }
+   .me {
+    font-size: 1.5rem;
+    color: black;
+ }
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) {
 .color {
   color: black;
 }
@@ -77,9 +100,21 @@ h1,h2 {
     word-wrap: break-word;
     position: relative;
     margin-top: 15%;  
+    
   }
 
+@media (max-width:640px){
+  #name {
+    height: 100%;
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    position: relative;
+    margin-top: 25%;  
+    
+  }
 
+}
 
 a {  
   color: white;
@@ -93,8 +128,11 @@ a {
   }
 
 body {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 95%;
+  height: auto;
+  width: auto; 
+ 
+ 
   font-family: 'Muli', sans-serif;
   /* background: linear-gradient(115deg, orange, cyan 70%, whitesmoke); */
   color: white;
@@ -159,8 +197,17 @@ header {
   color: white;
   font-weight: bold;
   position: fixed;
+  margin-right: 3%;
 
 }
+/* @media (max-width: 640px) {
+  .close-button {
+    color: white;
+    font-weight: bold;
+    position: fixed;
+  
+  }
+} */
 .button:hover {
   background-color: grey; 
   
@@ -179,15 +226,19 @@ header {
 
 .design {
  background: transparent;
- padding-left: 10%;
- padding-right: 10%;
+ padding-left: 7%;
+ padding-right: 7%;
  padding-bottom: 5%;  
  text-align: justify;
  text-justify: inter-word;
 
 }
+.design:hover {
+  font-size:150%;
+}
+
 .tag {
-  color: rgb(122, 102, 48);
+  color:rgb(244, 200, 66);
 }
 .black {
    color: rgb(244, 200, 66); 
@@ -207,6 +258,7 @@ header {
 }
 .visible {
   font-weight: bold;
+  font-style: italic;
   
 
 }
@@ -226,6 +278,7 @@ header {
   background-color: black;
   color: white;
 }
+
 
 .left1 {
 
