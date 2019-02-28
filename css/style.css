@@ -72,7 +72,7 @@ nav {
 @media (max-width: 340px){
 
   .tagline {
-    color: maroon;
+    color: rgb(232, 75, 44);
   }
 }
 
@@ -87,7 +87,7 @@ h1,h2 {
    }
    .me {
     font-size: 1.5rem;
-    color: black;
+    color: rgb(232, 75, 44);
  }
  
 
@@ -95,7 +95,7 @@ h1,h2 {
 
 @media (max-width: 1200px) {
 .color {
-  color: black;
+  color: rgb(232, 75, 44)
 }
 }
 
@@ -192,7 +192,7 @@ header {
     padding-top:0;
     padding-bottom:0;
     background: transparent;
-    color: black; 
+    color: rgb(232, 75, 44); 
     font-weight: bold;  
     /* text-decoration: underline; */
     border-radius: 260px;
