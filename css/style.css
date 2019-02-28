@@ -80,7 +80,7 @@ nav {
 h1,h2 {
   color: rgb(104, 244, 66);  
 }
-@media (max-width: 345px) {
+@media (max-width: 350px) {
 
   h1, h2 {
         color: maroon;
@@ -95,7 +95,7 @@ h1,h2 {
 
 @media (max-width: 1200px) {
 .color {
-  color: rgb(232, 75, 44)
+  color: darkblue;
 }
 }
 
@@ -119,7 +119,7 @@ h1,h2 {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 35%;  
+    margin-top: 40%;  
     
   }
 
