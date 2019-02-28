@@ -5,6 +5,8 @@ $(".custom").on('click', function () {
 $(".close-button").on('click', function () {
     $("#name").show();
 })
+
+
 $(document).ready(function () {
     $('.fade').slick({
         dots: false,

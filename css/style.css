@@ -75,7 +75,9 @@ nav {
     color: rgb(232, 75, 44);
   }
 }
-
+.hidden {
+  display: none;
+}
 
 h1,h2 {
   color: rgb(104, 244, 66);  
@@ -246,9 +248,7 @@ header {
  text-justify: inter-word;
 
 }
-.design:hover {
-  font-size:150%;
-}
+
 
 .tag {
   color:rgb(244, 200, 66);
