@@ -80,7 +80,7 @@ nav {
 h1,h2 {
   color: rgb(104, 244, 66);  
 }
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
 
   h1, h2 {
         color: maroon;
@@ -91,14 +91,18 @@ h1,h2 {
  }
  
 
-}
+} */
 
 @media (max-width: 1110px) {
 .color {
   color: darkblue;
 }
 }
-
+@media (max-width: 640px){
+  .color {
+    color: white;
+  }
+}
 
 .dark { color: black;}
 
@@ -112,14 +116,14 @@ h1,h2 {
     
   }
 
-@media (max-width:640px){
+@media (max-width:600px){
   #name {
     height: 100%;
     width: 100%;
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 40%;  
+    margin-top: 30%;  
     
   }
 
