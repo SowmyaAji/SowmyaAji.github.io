@@ -80,7 +80,7 @@ nav {
 h1,h2 {
   color: rgb(104, 244, 66);  
 }
-@media (max-width: 425px) {
+@media (max-width: 345px) {
 
   h1, h2 {
         color: maroon;
@@ -119,7 +119,7 @@ h1,h2 {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 25%;  
+    margin-top: 35%;  
     
   }
 
@@ -192,7 +192,7 @@ header {
     padding-top:0;
     padding-bottom:0;
     background: transparent;
-    color: rgb(232, 75, 44); 
+    color: darkblue; 
     font-weight: bold;  
     /* text-decoration: underline; */
     border-radius: 260px;
@@ -264,6 +264,9 @@ header {
 }
 .sharp{
   color: black;
+}
+.sharp1 {
+  color: darkblue;
 }
 .visible {
   font-weight: bold;
