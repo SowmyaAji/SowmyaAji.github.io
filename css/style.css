@@ -93,7 +93,7 @@ h1,h2 {
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1110px) {
 .color {
   color: darkblue;
 }
