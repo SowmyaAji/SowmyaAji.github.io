@@ -216,8 +216,9 @@ header {
     padding-top:0;
     padding-bottom:0;
     background: transparent;
-    color: darkblue; 
+    color: white; 
     font-weight: bold;  
+    
     /* text-decoration: underline; */
     border-radius: 260px;
   }
