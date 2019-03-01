@@ -1,24 +1,38 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.container {
+   min-height:100%;
+   position:relative;
+}
+.container {
+  height:100%;
+}
+header {
+  background: transparent;
+  padding:10px;
+}
 
-.main {
-    min-height: calc(100vh - 70px);
-    padding-left: 10%;
-   padding-right: 10%;
-  }
-
+body {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+}
+footer {
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background: transparent;
+}
 nav {
   margin-left: 1%;
 }
-.footer {
-   
-  
-    background-color: transparent;
-    position: absolute;
-    padding-right: 10%;
-    bottom: 1%;
-    height: 60px;
-    width: 100%;
+
     
-}
+
 @media (max-width: 640px){
   .footer {
    
@@ -79,9 +93,12 @@ nav {
   display: none;
 }
 
-h1,h2 {
-  color: rgb(104, 244, 66);  
+.norm {
+  font-size: 16px;
 }
+/* h1,h2 {
+  color: rgb(104, 244, 66);  
+} */
 /* @media (max-width: 350px) {
 
   h1, h2 {
@@ -114,7 +131,7 @@ h1,h2 {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 15%;  
+  margin-top: 10%;  
     
   }
 
@@ -165,11 +182,12 @@ body {
 
   .note{
     
-    color: black;
+    color: white;
+    background-color: black;
     display: block;  
     word-wrap: break-word;
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: justify;
     
   }
@@ -215,14 +233,7 @@ header {
   margin-right: 3%;
 
 }
-/* @media (max-width: 640px) {
-  .close-button {
-    color: white;
-    font-weight: bold;
-    position: fixed;
-  
-  }
-} */
+
 .button:hover {
   background-color: grey; 
   
