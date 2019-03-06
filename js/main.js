@@ -7,6 +7,7 @@ $(".close-button").on('click', function () {
 })
 
 
+
 $(document).ready(function () {
     $('.fade').slick({
         dots: false,
