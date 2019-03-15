@@ -16,10 +16,7 @@ header {
   padding:10px;
 }
 
-body {
-  padding:20px;
-  padding-bottom:60px;   /* Height of the footer */
-}
+
 footer {
   position:absolute;
   bottom: 0;
