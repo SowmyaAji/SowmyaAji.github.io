@@ -151,7 +151,12 @@ nav {
   }
 
 }
-
+audio {
+  background: transparent;
+  width: 100px;
+  height: 10px;
+  
+}
 a {  
   color: white;
 }
