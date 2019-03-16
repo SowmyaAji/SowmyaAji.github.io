@@ -360,11 +360,17 @@ header {
 
 }
 }
+.linked:hover{
+  transform: scale(1.5, 1.5);
+}
 
 .linked1 {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+.linked1:hover {
+  transform: scale(1.5, 1.5);
 }
 .linked2 {
   border-radius: 50%;
@@ -372,7 +378,9 @@ header {
   width: 60px;
 }
 
- 
+.linked2:hover {
+  transform: scale(1.5, 1.5);
+} 
 .code-main {
   background-color: black;
   margin-left: 10%;
