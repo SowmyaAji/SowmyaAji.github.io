@@ -25,7 +25,10 @@ h6{
   overflow: hidden;
   
 }
-
+.scroll {
+  overflow: auto;
+  height: 100%;
+ }
 
 
 
@@ -302,7 +305,9 @@ header {
 
 }
 
-
+.notes:hover {
+  font-size: 150%;
+}
 .tag {
   color:rgb(244, 200, 66);
 }
