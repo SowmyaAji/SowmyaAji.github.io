@@ -155,7 +155,7 @@ nav {
     display: block;
     word-wrap: break-word;
     position: relative;
-   margin-top: 7%; 
+   margin-top: 10%; 
    padding-left: 15%; 
    
     
@@ -358,7 +358,7 @@ header {
  .right {
   float: right;
   padding: 0 20px 20px 0;
-  color: white;
+  
  }
  @media (max-width: 640px){
    .right {
