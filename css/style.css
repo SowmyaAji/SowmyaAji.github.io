@@ -4,6 +4,7 @@ body {
    padding:0;
    height:100%;
    width: 100%;
+   
   
    
 }
@@ -49,6 +50,7 @@ nav {
     bottom: 3%;
     height: 80px;
     width: 100%;
+    background: black;
     
 }
 }
