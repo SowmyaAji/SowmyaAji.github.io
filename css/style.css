@@ -4,6 +4,7 @@ body {
    padding:0;
    height:100%;
    width: 100%;
+  
    
   
    
@@ -201,6 +202,7 @@ body {
   height: auto;
   width: auto; 
   
+  
   font-family: 'Muli', sans-serif;
   color: white;
   /* background: linear-gradient(115deg, orange, cyan 70%, whitesmoke); */
@@ -245,7 +247,9 @@ header {
 
 }
 
- 
+.back {
+  background:black;
+}
 
   .custom  {
     margin-top:2%;
