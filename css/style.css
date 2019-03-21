@@ -166,7 +166,7 @@ audio {
   
 }
 
-@media (max-width:600px) {
+@media (max-width:680px) {
   audio {
     background: transparent;
     width: 100px;
