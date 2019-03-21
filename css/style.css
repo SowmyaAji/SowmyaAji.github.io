@@ -22,13 +22,16 @@ h6{
 }
 .no-scroll {
   overflow: hidden;
-}
-@media (max-width:680px){
-  .no-scroll {
-    overflow: hidden;
-  }
+  
 }
 
+@media (max-width: 1000px) {
+  .no-scroll {
+    overflow: hidden;
+    
+  }
+
+}
 header {
   background: transparent;
   padding:10px;
