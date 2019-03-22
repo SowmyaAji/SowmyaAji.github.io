@@ -103,14 +103,24 @@ nav {
   color: white;
 }
 
-/* @media (max-width: 340px){
+ @media (max-width: 1340px ){
 
   h1 {
-    font-size: 35px;
+    color: black;
     
 
   }
-} */
+}  
+
+@media (max-width: 1200px){
+  h1 {
+    color: white;
+    
+
+  }
+}
+
+
 .hidden {
   display: none;
 }
@@ -149,24 +159,24 @@ nav {
     display: block;
     word-wrap: break-word;
     position: relative;
-   margin-top: 10%; 
-   padding-left: 15%; 
+    margin-top: 25%; 
+    padding-left: 20%; 
    
     
   }
 
-@media (max-width:600px){
+/* @media (max-width:600px){
   #name {
     height: 100%;
     width: 100%;
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 10%;  
+    margin-top: 35%;  
     
   }
 
-}
+} */
 audio {
   background: transparent;
   width: 200px;
@@ -290,12 +300,13 @@ header {
 }
 
 .design {
- background: transparent;
+ background: black;
  padding-left: 7%;
  padding-right: 7%;
  padding-bottom: 5%;  
  text-align: justify;
  text-justify: inter-word;
+
 
 }
 @media (max-width:600px){
