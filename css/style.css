@@ -162,7 +162,7 @@ nav {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 20%;  
+    margin-top: 10%;  
     
   }
 
@@ -298,6 +298,24 @@ header {
  text-justify: inter-word;
 
 }
+@media (max-width:600px){
+
+  .design {
+    background:black;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;  
+    text-align: justify;
+    text-justify: inter-word;
+   
+   }
+
+
+}
+
+
+
+
 
 .notes:hover {
   font-size:150%;
