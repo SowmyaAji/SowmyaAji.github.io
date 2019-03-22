@@ -103,12 +103,14 @@ nav {
   color: white;
 }
 
-@media (max-width: 340px){
+/* @media (max-width: 340px){
 
-  .tagline {
-    color: rgb(232, 75, 44);
+  h1 {
+    font-size: 35px;
+    
+
   }
-}
+} */
 .hidden {
   display: none;
 }
@@ -117,18 +119,10 @@ nav {
   font-size: 16px;
 }
 
-/* @media (max-width: 350px) {
-
-  h1, h2 {
-        color: maroon;
-   }
-   .me {
-    font-size: 1.5rem;
-    color: rgb(232, 75, 44);
- }
+ 
  
 
-} */
+
 
 @media (max-width: 850px) {
 .color {
@@ -168,7 +162,7 @@ nav {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 20%;  
+    margin-top: 25%;  
     
   }
 
