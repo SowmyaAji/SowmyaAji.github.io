@@ -159,13 +159,13 @@ nav {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 25%; 
+    margin-top: 35%; 
     padding-left: 20%; 
    
     
   }
 
-/* @media (max-width:600px){
+@media (max-width:600px){
   #name {
     height: 100%;
     width: 100%;
@@ -173,10 +173,11 @@ nav {
     word-wrap: break-word;
     position: relative;
     margin-top: 35%;  
+    padding-top: 5%;
     
   }
 
-} */
+}
 audio {
   background: transparent;
   width: 200px;
