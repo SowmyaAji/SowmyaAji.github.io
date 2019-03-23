@@ -131,7 +131,9 @@ nav {
 }
 
  
- 
+a {
+  cursor: pointer;
+}
 
 
 
