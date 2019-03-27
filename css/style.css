@@ -419,13 +419,24 @@ header {
   width: 100%;
   
   z-index: 10;
-  background: black;
- 
-  
-  
+  background: black;  
 
 }
+@media (max-width:640px) {
+  .projects {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 10;
+    background: black;  
+  
+  }
 
+}
 
 .linked {
    border-radius: 50%;
