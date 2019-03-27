@@ -426,12 +426,11 @@ padding-top: 3rem;
   padding-left: 8rem;
   padding-right: 8rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+ 
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  
+  width: 100%; 
   z-index: 10;
   background: black;  
 
@@ -440,7 +439,8 @@ padding-top: 3rem;
   .projects {
     padding-left: 4rem;
     position: fixed;
-    width: 100%;    
+    width: 100%;   
+    
  
   }
 
