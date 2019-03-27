@@ -43,7 +43,7 @@ footer {
   bottom: 0;
   left: 0;
   width:100%;
-  height:60px;   /* Height of the footer */
+  height:30px;   /* Height of the footer */
   background: black;
 }
 nav {
@@ -55,13 +55,13 @@ nav {
 @media (max-width: 640px){
   .footer {
    
-  
+    padding-bottom: 2rem;
     background-color: transparent;
     position: absolute;
     left: 0;
-    
-    bottom: 3%;
-    height: 90px;
+    line-height: 1;
+    bottom: 0;
+    height: 30px;
     width: 100%;
     background: black;
     
@@ -73,6 +73,7 @@ nav {
   }
 .social-footer {
   padding: 2rem;  
+  padding-top: 0; 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -109,20 +110,19 @@ nav {
   h1 {
     color: black;
     
+    
 
   }
 }  
 
-@media (max-width: 1200px){
-  h1 {
-    color: white;
-    
+h1 {
 
-  }
+  color: ivory;
+  font-size: 5rem;
 }
 @media (max-width:640px) {
   h1 {
-    font-size: 2.5rem;
+    font-size:3rem;
   }
 }
 
@@ -169,7 +169,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 30%; 
+    margin-top: 25%; 
     padding-left: 20%; 
    
     
@@ -182,7 +182,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 40%;  
+    margin-top: 50%;  
     padding-top: 5%;
     
   }
@@ -277,7 +277,7 @@ header {
     padding-top:0;
     padding-bottom:0;
     background: transparent;
-    color: white; 
+    color:rgb(244, 200, 66);
     font-weight: bold;  
     
     /* text-decoration: underline; */
@@ -418,7 +418,7 @@ header {
 }
 .projects1 {
 padding-right: 2rem;
-padding-top: 3rem;
+padding-top: 1rem;
 
 
 }
