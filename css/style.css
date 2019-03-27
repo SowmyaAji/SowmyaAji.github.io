@@ -147,6 +147,7 @@ a {
     color: white;
   }
 }
+
 .shorttext { display: none; }
 
 
@@ -408,7 +409,20 @@ header {
 }
 
 .projects {
+  padding-left: 8rem;
+  padding-right: 8rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  z-index: 10;
+  background: black;
+ 
+  
+  
 
 }
 
@@ -447,6 +461,12 @@ header {
 .linked2:hover {
   transform: scale(1.5, 1.5);
 } 
+
+.linked3 {
+  border-radius:50%;
+  height: 30px;
+  width: 30px;
+}
 .code-main {
   background-color: black;
   margin-left: 10%;
