@@ -120,7 +120,11 @@ nav {
 
   }
 }
-
+@media (max-width:640px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 .hidden {
   display: none;
@@ -176,7 +180,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 35%;  
+    margin-top: 40%;  
     padding-top: 5%;
     
   }
@@ -193,7 +197,7 @@ audio {
 @media (max-width:680px) {
   audio {
     background: transparent;
-    width: 100px;
+    width: 50px;
     height: 10px;
     
   }
@@ -427,8 +431,7 @@ header {
 @media (max-width:640px) {
   .projects {
     position: fixed;
-    width: 100%;
-    background: black;  
+    width: 100%;    
  
   }
 
