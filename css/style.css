@@ -437,7 +437,7 @@ padding-top: 3rem;
 }
 @media (max-width:640px) {
   .projects {
-    padding-left: 8rem;
+    padding-left: 4rem;
     position: fixed;
     width: 100%;   
     
