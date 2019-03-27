@@ -139,7 +139,9 @@ a {
   cursor: pointer;
 }
 
-
+.fixline {
+  line-height: 30px;
+}
 
 @media (max-width: 850px) {
 .color {
@@ -270,7 +272,7 @@ header {
 }
 
   .custom  {
-    margin-top:2%;
+    margin-top:1%;
     
     padding-top:0;
     padding-bottom:0;
@@ -414,7 +416,12 @@ header {
   color: white;
  
 }
+.projects1 {
+padding-right: 2rem;
+padding-top: 3rem;
 
+
+}
 .projects {
   padding-left: 8rem;
   padding-right: 8rem;
@@ -431,6 +438,7 @@ header {
 }
 @media (max-width:640px) {
   .projects {
+    padding-left: 4rem;
     position: fixed;
     width: 100%;    
  
