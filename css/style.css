@@ -90,16 +90,7 @@ nav {
   margin-bottom: 0;
  }
  
- /* .social-footer .social-footer-icons .fa {
-  font-size: 1.5rem;
-  color: #fefefe;
- }
  
- .social-footer .social-footer-icons .fa:hover {
-  color: darkslategray;
-  transition: color 0.3s ease-in;
- } */
-
  .me {
   font-size: 1.5rem;
   color: white;
@@ -250,7 +241,10 @@ body {
     text-align: justify;
     
   }
-  
+.codepage {
+  padding-left: 7%;
+  padding-right: 7%;
+}
  .move {
    margin-right:5%;
    

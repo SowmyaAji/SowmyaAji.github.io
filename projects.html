@@ -29,19 +29,14 @@
 
     
         <div class="projects fulltext"> 
-       <a href="index.html" class="black fulltext" style:"float: left"><img src="images/Sowmya.jpeg" class="linked2 left"></a>
-       <ul class="menu simple right">
+       
+       <ul class="menu simple">
+            <li><a href="index.html" class="black" style:"float: left">Home</a></li>
             <li><a href="code.html" class="tag">Projects</a></li>
             
-            <li><a href="about.html"><img src="images/avataars.png" height="30px" width="30px";></a></li>
-            <li><a href="resume.html"><i class="far fa-file-alt" aria-hidden="true" style="font-size:30px; color: white"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sowmya-aji/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"
-                        aria-hidden="true" style="font-size:30px; color: white"></i></a></li>
-            <li><a href="https://github.com/SowmyaAji" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"
-                        style="font-size:30px; color: white;"></i></a></li>
-            <li><a href="mailto:sowmya.aji@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square" aria-hidden="true"
-                        style="font-size:30px; color: white;"></i></a></li>
-                   
+            <li><a href="about.html" class="black">Me</a></li>
+            <li><a href="resume.html" class="black">Resume</i></a></li>
+            
          
             </ul>
              <hr>
@@ -50,13 +45,15 @@
             <ul class="menu simple">
             <li><a href="index.html" class=" tag">Home</a></li>
            <li> <a href="about.html" class="tag">Me</a></li>
-             </ul>
+            
+            
+            
         </div>
         <div class="projects-main" id="top">
-         <hr>
+         
          <br><br>
         <div id="getJustice">
-       
+       <br><br><br>
             <a href="http://getjustice.herokuapp.com" class="black" target="_blank" rel="noopener noreferrer">
                 <h4 class="white">getJustice</h4></a>
             <a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/"  class="extn-button" target="_blank" rel="noopener noreferrer"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
@@ -221,6 +218,7 @@ def screenshot_decoder(dataUrl):
                <hr> 
         </div>
         <div id="Snippet">
+        <br><br><br>
             <a href="https://damp-island-36297.herokuapp.com/" class="black" target="_blank" rel="noopener noreferrer">
                 <h4 class="white"><strong>Snip^pet</strong></h4>
             </a>
@@ -329,6 +327,7 @@ $.get("/api/my_snippets/").then(function (snippets) {
         </div>
         
         <div id="Singalong">
+        <br><br><br>
             <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji"  class="black" target="_blank" rel="noopener noreferrer">
                 <h4 class="white"><strong>Sing Along</strong></h4>
             </a>
@@ -371,9 +370,10 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
             <hr>
         </div>
         <div id="Pathfinder">
+         <br><br><br>
         <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" class="black" target="_blank" rel="noopener noreferrer">
-        <h4 class="white"><strong>Pathfinder</strong></h4>
-            </a>
+        <h4 class="white"><strong>Pathfinder</strong></h4>  
+             </a>
             <br><br>
             <h5>What the project is about:</h5>
             <p>How are maps plotted? By using elevations and depths. How does one find a path through the mountians? Well, obviously, one takes the lowest elevation and goes. Yes, true. But how to get the computer to figure out which is the lowest elevation and take that path? That was the challenge that I faced, by developing a Python program for the app, the Pathfinder.</p>
