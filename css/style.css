@@ -261,6 +261,16 @@ header {
 
 }
 
+@media (max-width: 640px) {
+
+	background: black;
+  width: 100%;
+	position: fixed;
+	top: 0;
+  left: 0;
+
+} 
+
 .back {
   background:black;
 }
