@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="back">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h1 class="text-light">I Guess!</h1>
+        
+        </nav>
+    </header>
+    <div class="container-fluid text-center">
+ 
+       
+    
+    <p class="shorttext">Built by Sowmya Aji</p>
+    <a href="index.html">Home</a>
+    <p class="right fulltext">Built by Sowmya Aji with jQuery, Bootstrap, CSS & HTML</p>
+    <br><br>
+        <div class="main">
+            <h5>Let's play!</h5>
+            
+            <span class="fulltext"><br></span>
+            <h5>I will guess. Think of a number between 1 and 100. And click Y when you are ready to play.</h5>
+            <span class="fulltext"><br></span>
+            <button id="yes" type="button" class="btn btn-success"> Y </button>
+        </div>
+        <span class="fulltext"><br></span>
+        <div class="input">
+            <h4>My guess is <input type="text" id="guesses" value="0"></h4>
+        </div>
+        <div class="change">
+        <span class="fulltext"><br></span>
+            <h5>Click > if your number is higher than my guess. Click < if it is lesser. Click = if I have
+                    guessed right!</h5> 
+                    <span class="fulltext"><br><br></span>
+                    <button id="more" type="button" class="btn btn-info"> > </button> <button id="less"
+                        type="button" class="btn btn-warning">
+                        < </button> <button id="equals" class="btn btn-primary"> =
+                    </button>
+
+        </div>
+        <div id="won">
+            <span class="fulltext"><br></span>
+            <h4 class="text-danger">Yay! I won! Play again?</h4>
+             <span class="fulltext"><br></span>
+            <button id="yes2" type="button" class="btn btn-success"> Y </button>
+
+        </div>
+       
+    </div>
+</body>

@@ -1,3 +1,5 @@
+/* homepage */
+
 html,
 body {
    margin:0;
@@ -13,7 +15,11 @@ body {
 h6{
   font-weight: bold;
 }
-
+.game {
+  color: blue;
+  font-size: 24px;
+  text-decoration: underline;
+}
 
 .container {
    min-height:100%;
@@ -114,6 +120,8 @@ h1 {
 @media (max-width:640px) {
   h1 {
     font-size:3rem;
+    
+
   }
 }
 

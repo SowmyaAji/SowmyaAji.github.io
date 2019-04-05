@@ -1,0 +1,31 @@
+.shorttext { display: none; }
+
+
+@media (max-width: 640px) {
+    .shorttext { display: inline-block; }
+    .fulltext { display: none; }
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+input { 
+    text-align: center; 
+}
+
+.container {
+    min-height:100%;
+
+}
+
+.right {
+
+    float: right;
+}
+
+.navbar-brand {
+    margin-left: 35%;
+    
+    
+}
