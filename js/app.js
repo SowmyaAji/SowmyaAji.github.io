@@ -1,6 +1,6 @@
-//hide the victory message till needed
+//hide the victory/edge case messages till needed
 $("#won").hide();
-
+$("#cheat").hide();
 
 //global variables
 let startpoint = 0
@@ -10,12 +10,13 @@ let counter = 0
 
 //first guess
 $("#yes").on("click", function () {
-    console.log("I'm working")
+
     $("#guesses").val(midpoint)
-    console.log(midpoint)
+
     counter = counter + 1
     $("#count").val(counter)
-    console.log(counter)
+    seventhCount()
+
 })
 
 
@@ -32,8 +33,7 @@ $("#more").on('click', function () {
     $("#guesses").val(midpoint)
     counter = counter + 1
     $("#count").val(counter)
-
-
+    seventhCount()
 
 })
 
@@ -44,13 +44,23 @@ $("#less").on('click', function () {
     $("#guesses").val(midpoint)
     counter = counter + 1
     $("#count").val(counter)
+    seventhCount()
+
 
 })
 
+//if someone cheats
+function seventhCount() {
+    if (counter > 7) {
+        console.log(counter)
+        $("#cheat").show();
+    }
+
+}
 
 
 //reload the game
-$(document).on("click", "#yes2", function () {
+$(document).on("click", ".yes2", function () {
     location.reload(true);
 });
 
