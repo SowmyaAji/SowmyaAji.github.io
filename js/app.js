@@ -54,6 +54,7 @@ function seventhCount() {
     if (counter > 7) {
         console.log(counter)
         $("#cheat").show();
+        counter = 7
     }
 
 }
