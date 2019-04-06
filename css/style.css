@@ -16,8 +16,8 @@ h6{
   font-weight: bold;
 }
 .game {
-  color:blue;
-  background: white;
+  color:orange;
+  background: darkgreen;
   font-size: 24px;
   text-decoration: underline;
 }
@@ -175,7 +175,7 @@ a {
     
   }
 
-@media (max-width:600px){
+@media (max-width:800px){
   #name {
     height: 100%;
     width: 100%;
