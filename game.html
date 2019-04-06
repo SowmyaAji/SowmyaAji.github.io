@@ -20,6 +20,7 @@
         
         </nav>
     </header>
+    <div class="backim">
     <div class="container-fluid text-center">
  
        
@@ -27,18 +28,18 @@
     <p class="shorttext">Built by Sowmya Aji</p>
     <a href="index.html">Home</a>
     <p class="right fulltext">Built by Sowmya Aji with jQuery, Bootstrap, CSS & HTML</p>
-    <br><br>
+    <br>
         <div class="main">
-            <h4 class="text-primary">Let's play!</h4>
+        <span class="fulltext"><br></span>
+           <h3 class="text-primary blinking">Let's play!</h4>
             
             <span class="fulltext"><br></span>
-            <h5>I will guess. Think of a number between 1 and 100. Click Y when you are ready.</h5>
-            <span class="fulltext"><br></span>
-            <button id="yes" type="button" class="btn btn-success"> Y </button>
+            <h5>Think of a number between 1 and 100. I will guess it within 7 tries! Click <button id="yes" type="button" class="btn btn-success"> Y </button> when you are ready to play.</h5>
         </div>
         <span class="fulltext"><br></span>
         <div class="input">
             <h4>My guess is <input type="text" id="guesses" value="0"></h4>
+            <p>Counter <input type="text" id="count" value="0"></p>
         </div>
         <div class="change">
         <span class="fulltext"><br></span>
@@ -52,12 +53,10 @@
 
         </div>
         <div id="won">
-            <span class="fulltext"><br></span>
-            <h4 class="text-danger">Yay! I won! Play again?</h4>
-             <span class="fulltext"><br></span>
-            <button id="yes2" type="button" class="btn btn-success"> Y </button>
+        <h4><span class="text-danger">Yay! I won!</span><img src="images/star.gif" alt="dancing girl"></h4><p>Play again?<button id="yes2" type="button" class="btn btn-success"> Y </button></p>
+              
 
         </div>
-       
+       </div>
     </div>
 </body>

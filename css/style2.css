@@ -24,3 +24,18 @@ input {
     float: right;
 }
 
+.blinking{
+    animation:blinkingText 1.7s infinite;
+    
+}
+@keyframes blinkingText{
+    0%{     color: blue;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: blue;    }
+}
+
+/* .backim {
+    background: url("/images/celibrate.webp");
+} */
