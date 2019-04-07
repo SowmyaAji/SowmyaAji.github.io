@@ -6,7 +6,7 @@ body {
    padding:0;
    height:100%;
    width: 100%;
-  
+   font-family: 'Slabo 27px', serif;
    
   
    
@@ -14,17 +14,20 @@ body {
 
 h6{
   font-weight: bold;
+  font-family: 'Slabo 27px', serif;
 }
 .game {
-  color:orange;
-  background: grey;
+  color: red;
+  background: transparent;
   font-size: 24px;
   text-decoration: underline;
+  font-family: 'Slabo 27px', serif;
 }
 
 .container {
    min-height:100%;
    position:relative;
+   font-family: 'Slabo 27px', serif;
    
    
 }
@@ -107,7 +110,7 @@ nav {
 
   h1 {
     color: black;
-    
+    font-family: 'Slabo 27px', serif;
     
 
   }
@@ -117,10 +120,12 @@ h1 {
 
   color: ivory;
   font-size: 5rem;
+  font-family: 'Slabo 27px', serif;
 }
 @media (max-width:640px) {
   h1 {
     font-size:3rem;
+    font-family: 'Slabo 27px', serif;
     
 
   }
@@ -223,7 +228,7 @@ body {
   width: auto; 
   
   
-  font-family: 'Muli', sans-serif;
+  font-family: 'Slabo 27px', serif;
   color: white;
   /* background: linear-gradient(115deg, orange, cyan 70%, whitesmoke); */
   
@@ -357,7 +362,7 @@ header {
 }
 @media (max-width: 640px) { 
  .black {
-   color: white
+   color:#0d961d
  }
 }
 
