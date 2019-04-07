@@ -17,20 +17,20 @@ h6{
   font-family: 'Slabo 27px', serif;
 }
 .game {
-  color: red;
+  color:maroon;
   background: transparent;
   font-size: 24px;
   text-decoration: underline;
   font-family: 'Slabo 27px', serif;
 }
-@media (max-width: 380px){
+/* @media (max-width: 380px){
   .game {
     color: white;
     background: transparent;
     font-size: 24px;
     text-decoration: underline;
     font-family: 'Slabo 27px', serif;
-  }
+  } */
 
 }
 .container {
