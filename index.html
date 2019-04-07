@@ -89,12 +89,11 @@ body {
 </nav> 
 </header> 
 <body class="no-scroll">
-    <div><a href="game.html"><span class="game right fulltext">Play a game I built!</span></a>
-    <a href="game.html"><span class="game shorttext">Play a game I built!</span></a>
+    
+    <div class="main container scroll">
+        <div><button class="button game right" type="button" data-open="gamesModal" >Play a game I built!</button>
     </div>
 
-    <div class="main container scroll">
-        
           <div>
                 <div id="name">  
                     
@@ -108,8 +107,30 @@ body {
                    
                 </div>
             </div>  
-            
-        
+        <div id="games">
+         <div class="reveal design" id="gamesModal" data-reveal>   
+         <h3>My Games</h3>
+         <img src="images/star.gif" alt="spinning star">
+         <img src="images/star.gif" alt="spinning star">
+         <p>Challenge yourself...</p> 
+         <p>These are simple games that I've built. </p>
+         <p>Click on the game titles to play them. Have fun! </p>
+         
+         
+         <br>
+         <a href="iguess.html"><h4>iGuess</h4><a>
+         <br>
+         <p>You have to think of a number and the computer has to guess it! </p>
+         <br>
+         <a href="cowbull.html"><h4>Cows&Bulls</h4></a>
+         <br>
+         <p>The computer picks a secret number and you have to guess it! </p>
+         <br>
+         <h5>More coming soon!</h5>
+
+          <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span>
+ 
+        </div>
         <div id="work">
              <div class="reveal design" id="booksModal" data-reveal>
                 <img src="images/book.gif" alt="worm">

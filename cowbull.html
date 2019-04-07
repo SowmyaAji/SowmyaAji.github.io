@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CowBull</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="js/game.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h1>Cows n Bulls</h1>
+        <a href="index.html">Home</a>
+    </nav>
+
+ <div class="container text-center"> 
+
+            <h4>Hi and welcome!</h4>
+            <p> You have to guess a four-digit secret number that I have thought of.</p>
+            <p> If the digits you
+                guess are
+                in my secret number and in the right place, you get bulls. If they are not in the right place, you get
+                cows.</p>
+
+            <h4>What's your guess?</h3>
+            
+            <h3><input type="text" size="4" id="fours" onKeyPress="return check(event,value)"  placeholder="0000">
+                <button class="btn btn-success" id="go"> Go </button></h3>
+            <h3><textarea type="text" id="results" rows="2" placeholder="You have 0 cows and 0 bulls"></textarea></h3><div id="win">
+        <img src="images/star.gif" alt="spinning star">
+        </div><div id="again">
+        <p>Do you want to play again? <button class="btn btn-success"id="repeat"> Go </button></p>
+        </div>
+            <textarea type="text" id="choices" rows="5" placeholder="Your guesses"></textarea>
+        
+
+        <div id="error">
+            <p>Please input four digits. Thanks.</p>
+        </div>
+        
+        
+    </div>
+
+</body>
+
+</html>

@@ -17,7 +17,7 @@ h6{
 }
 .game {
   color:orange;
-  background: darkgreen;
+  background: grey;
   font-size: 24px;
   text-decoration: underline;
 }
@@ -286,6 +286,7 @@ header {
     /* text-decoration: underline; */
     border-radius: 260px;
   }
+ 
  
   
   .extn-button {
