@@ -23,7 +23,10 @@ input {
 
     float: right;
 }
-
+a{
+    color: white;
+    margin: 10px;
+}
 .blinking{
     animation:blinkingText 1.7s infinite;
     

@@ -1,14 +1,17 @@
 
-nav {
+/* nav {
     background-color: darkred;
     color: white;
     height: 60px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2%;
+} */
+
+a{
+    color: white;
+    margin: 10px;
 }
-
-
 
 input {
     font-size: 18px;
