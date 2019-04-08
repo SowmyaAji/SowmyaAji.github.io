@@ -18,37 +18,24 @@ h6{
 }
 .game {
   
-color: blue;
+color: blueviolet;
   text-decoration: underline;
   font-family: 'Slabo 27px', serif;
   font-size: 24px;
   background: transparent;
 }
-/* #grad1 {
-  background: red;
-  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: vw;
-} */
+@media (max-width: 380px) {
 
-/* @media (max-width:640px){
-
-  #grad1 {
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 10vw;
-  }
+  .game {
   
-} */
+    color:orangered;
+      text-decoration: underline;
+      font-family: 'Slabo 27px', serif;
+      font-size: 24px;
+      background: transparent;
+    }
+
+}
 .container {
    min-height:100%;
    position:relative;
