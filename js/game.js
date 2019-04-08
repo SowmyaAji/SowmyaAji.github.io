@@ -64,7 +64,7 @@ function cowBull(guess) {
     $("#choices").val(myChoices)
     $("#fours").val("");
     if (bulls === 4) {
-        $("#results").val("You have won!")
+        $("#results").val("You have won! In " + guesses + " guesses!")
         $("#win").show();
         $("#again").show();
 
