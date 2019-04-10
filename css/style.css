@@ -134,6 +134,7 @@ h1 {
   font-size: 5rem;
   font-family: 'Slabo 27px', serif;
 }
+
 @media (max-width:640px) {
   h1 {
     font-size:3rem;
@@ -186,7 +187,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 25%; 
+    margin-top: 20%; 
     padding-left: 20%; 
    
     
