@@ -187,7 +187,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative;
-    margin-top: 20%; 
+    margin-top: 15%; 
     padding-left: 20%; 
    
     
@@ -331,6 +331,7 @@ header {
 .clickme {
    
     color: white;
+    text-decoration: underline;
   
 }
 
