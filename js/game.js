@@ -40,9 +40,9 @@ function cowBull(guess) {
 
     let checkNum = String(secNum);
     myChoices.push(guess)
-    console.log(checkNum);
+
     guesses = guesses + 1;
-    console.log(guess);
+
     let num = 0;
     for (let i = 0; i < guess.length; i++) {
 
@@ -57,8 +57,8 @@ function cowBull(guess) {
     }
 
 
-    console.log("cows " + cows);
-    console.log("bulls " + bulls);
+
+
     $("#results").val("You have " + bulls + " bulls and " + cows + " cows in " + guesses + " guesses!");
 
     $("#choices").val(myChoices)
@@ -68,7 +68,14 @@ function cowBull(guess) {
         $("#win").show();
         $("#again").show();
 
+
     }
+}
+function showAnswer() {
+    $("#answer").on('click', function () {
+        $("#ans").val(secNum);
+        $("#again").show();
+    })
 }
 
 function playAgain() {
@@ -79,3 +86,4 @@ function playAgain() {
 }
 checkLength()
 playAgain()
+showAnswer()

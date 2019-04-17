@@ -37,12 +37,15 @@
                 <button class="btn btn-success" id="go"> Go </button></h3>
             <h3><textarea type="text" id="results" rows="2" placeholder="You have 0 cows and 0 bulls"></textarea></h3><div id="win">
         <img src="images/star.gif" alt="spinning star">
-        </div><div id="again">
+        </div>
+        
+        <div id="again">
         <p>Do you want to play again? <button class="btn btn-success"id="repeat"> Go </button></p>
         </div>
-            <textarea type="text" id="choices" rows="5" placeholder="Your guesses"></textarea>
-        
-
+            <textarea type="text" id="choices" rows="3" placeholder="Your guesses"></textarea>
+        <div>
+        <button class="btn btn-warning" id="answer">I give up. Show secret number</button><input type="text" size='4' id="ans">
+        </div>
         <div id="error">
             <p>Please input four digits. Thanks.</p>
         </div>

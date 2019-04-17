@@ -127,7 +127,10 @@ nav {
 
   }
 }  
-
+.about:hover {
+  font-size: 150%;
+  font-family: 'Slabo 27px', serif;
+}
 h1 {
 
   color: ivory;
@@ -242,6 +245,7 @@ body {
   
   
   font-family: 'Slabo 27px', serif;
+ 
   color: white;
   /* background: linear-gradient(115deg, orange, cyan 70%, whitesmoke); */
   
