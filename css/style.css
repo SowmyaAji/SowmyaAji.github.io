@@ -138,6 +138,7 @@ h1 {
   font-family: 'Slabo 27px', serif;
 }
 
+
 @media (max-width:640px) {
   h1 {
     font-size:3rem;
