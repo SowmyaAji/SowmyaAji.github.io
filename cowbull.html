@@ -10,7 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-    <script src="js/game.js" defer></script>
+    <script src="js/cowbull.js" defer></script>
 </head>
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -28,22 +28,23 @@
             <p> You have to guess a four-digit secret number that I have thought of.</p>
             <p> If the digits you
                 guess are
-                in the right place in my number, you get bulls. If they are in a differentplace, you get
+                in the right place, you get bulls. If they are in a different place, you get
                 cows.</p>
 
             <h4>What's your guess?</h3>
             
             <h3><input type="text" size="4" id="fours" onKeyPress="return check(event,value)"  placeholder="0000">
                 <button class="btn btn-success" id="go"> Go </button></h3>
-            <h3><textarea type="text" id="results" rows="2" placeholder="You have 0 cows and 0 bulls"></textarea></h3><div id="win">
+            <p><input type="text" size="3" id ="gu">guesses</p>
+            <h3><textarea type="text" id="results" rows="2" placeholder=" 0 cows and 0 bulls"></textarea></h3><div id="win">
         <img src="images/star.gif" alt="spinning star">
         </div>
         
         <div id="again">
-        <p>Do you want to play again? <button class="btn btn-success"id="repeat"> Go </button></p>
+        <p>Do you want to play again? <button class="btn btn-success"id="repeat"> Go </button><img src="images/star.gif" alt="spinning star"></p>
         </div>
-            <textarea type="text" id="choices" rows="3" placeholder="Your guesses"></textarea>
-        <div>
+            <textarea type="text" id="choices" rows="4" placeholder="Your guesses"></textarea>
+        <div id="answ">
         <button id="answer">I give up.😔 Show secret number</button><input type="text" size='4' id="ans">
         </div>
         <div id="error">

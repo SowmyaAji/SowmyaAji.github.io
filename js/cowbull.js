@@ -2,8 +2,11 @@ $("#error").hide();
 $("#again").hide();
 $("#win").hide();
 let secNum = randomNum();
+
 let guesses = 0;
 let myChoices = []
+
+
 
 function check(e, value) {
     //on keys pressed, allow only if character is number
@@ -41,6 +44,7 @@ function cowBull(guess) {
     let checkNum = String(secNum);
     myChoices.push(guess)
 
+
     guesses = guesses + 1;
 
     let num = 0;
@@ -59,14 +63,19 @@ function cowBull(guess) {
 
 
 
-    $("#results").val("You have " + bulls + " bulls and " + cows + " cows in " + guesses + " guesses!");
+    $("#results").val(" " + bulls + " bulls,  " + cows + " cows ");
+    let results = $('#results').val()
 
+    myChoices.push(results)
     $("#choices").val(myChoices)
+    $("#gu").val(guesses)
+
     $("#fours").val("");
     if (bulls === 4) {
         $("#results").val("You have won! In " + guesses + " guesses!")
         $("#win").show();
         $("#again").show();
+        $("#answ").hide();
 
 
     }
@@ -75,6 +84,7 @@ function showAnswer() {
     $("#answer").on('click', function () {
         $("#ans").val(secNum);
         $("#again").show();
+
     })
 }
 

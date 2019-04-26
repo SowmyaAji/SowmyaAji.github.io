@@ -16,13 +16,14 @@ a{
 input {
     font-size: 18px;
     font-weight: bold;
-    background-color: darkred;
+    background-color: blue;
     color: white;
+    text-align: center; 
 }
 
 textarea {
     font-size: 16px;
-    width: 280px;
+    width: 200px;
     
 }
 .shorttext { display: none; }
