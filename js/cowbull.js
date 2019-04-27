@@ -44,7 +44,7 @@ function cowBull(guess) {
     let cows = 0;
 
     let checkNum = String(secNum);
-    myChoices.push(guess)
+
 
 
     guesses = guesses + 1;
@@ -68,8 +68,10 @@ function cowBull(guess) {
     $("#results").val(" " + bulls + " bulls,  " + cows + " cows ");
     let results = $('#results').val()
 
-    myChoices.push(results)
-    $("#choices").val(myChoices)
+    myChoices.push(guess + " : " + results)
+    newChoices = myChoices.join(" ")
+
+    $("#choices").val(newChoices)
     $("#gu").val(guesses)
 
     $("#fours").val("");
