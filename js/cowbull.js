@@ -33,10 +33,12 @@ function checkLength() {
         }
     })
 }
+//generate random number for the players to guess
 function randomNum() {
     return Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
 }
 
+//main game function
 function cowBull(guess) {
     let bulls = 0;
     let cows = 0;

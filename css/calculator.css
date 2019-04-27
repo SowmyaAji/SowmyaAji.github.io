@@ -1,0 +1,43 @@
+button {
+    color: white;
+    font-size: 20px;
+    background-color: royalblue;
+    border: black solid 1px;
+    border-width: 1rem;
+    height: 5rem;
+    width: 5rem;
+
+}
+
+
+
+#display {
+
+    display: inline-block;
+}
+
+#bar {
+
+    height: 3rem;
+    width: 7rem;
+    font-size: 24px;
+    color: royalblue;
+    padding-left: 40px;
+}
+
+.right{
+    float: right;
+} 
+
+header{
+    padding-top: 10px;
+    background-color: blue;
+    color: white;
+    height: 60px;
+}
+
+a{
+    color: white;
+    float: right;
+    padding-right: 150px;
+}
