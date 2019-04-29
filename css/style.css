@@ -7,9 +7,8 @@ body {
    height:100%;
    width: 100%;
    font-family: 'Slabo 27px', serif;
-   overflow-x: hidden;
-   
-   
+   overflow-x: hidden; 
+   overscroll-behavior: contain; 
 }
    
 
@@ -252,7 +251,7 @@ body {
   color: white;
   /* background: linear-gradient(115deg, orange, cyan 70%, whitesmoke); */
   
- overscroll-behavior: none; 
+
   }
 
   .retroshadow {
