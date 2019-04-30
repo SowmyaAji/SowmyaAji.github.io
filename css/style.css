@@ -414,7 +414,9 @@ header {
   padding: 0 20px 20px 0;
   
  }
-
+.scrollable {
+   -webkit-overflow-scrolling: auto;
+}
 .simple1 {
   background-color: black;
   color: white;
@@ -443,6 +445,7 @@ header {
   padding-right: 10%;
   background-color: black;
   color: white;
+ 
  
 }
 .projects1 {
