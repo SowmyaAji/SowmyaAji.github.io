@@ -31,7 +31,7 @@ button {
 
 header{
     padding-top: 10px;
-    background-color: blue;
+    background-color:royalblue;
     color: white;
     height: 60px;
 }
@@ -39,5 +39,5 @@ header{
 a{
     color: white;
     float: right;
-    padding-right: 150px;
+    padding-right: 50px;
 }
