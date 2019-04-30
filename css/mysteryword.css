@@ -1,0 +1,27 @@
+.main {
+    text-align: center;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+a {
+    padding-right: 30px;
+    float: right;
+}
+
+header {
+    background-color: gainsboro;
+    height: 60px;
+    padding-top: 5px;
+}
+
+button {
+    height: 25px;
+    
+}
+
+input {
+    height: 25px;
+    text-align: center;
+}

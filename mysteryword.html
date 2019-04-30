@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MysteryWord<</title> 
+    <link rel="stylesheet" href="css/mysteryword.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer>
+            </script>
+            <script src="js/mysteryword.js" defer>
+            </script>
+
+</head>
+
+
+
+<body>
+    <header>
+    <a href="index.html">Home</a><a href="iguess.html">FirstGame</a>
+        <h1>MysteryWord</h1>
+    </header>
+</body>
+
+
+
+<div class="main container">
+
+    <div>
+        <h3>You have to guess a word that I think of, letter by letter. You get eight guesses to do it!</h3>
+
+        <h4>Pick a difficulty level here:</h4>
+        <button id="e">Easy</button><button id="m">Medium</button><button id="d">Difficult</button>
+    </div>
+    <br>
+    <br>
+
+    <div id="blanks"></div>
+ 
+    <div id="guess">
+        <p>Guess a letter!</p>
+        <input type="text" size="3" id="letter">
+        <button id="go">Go</button>
+
+    </div>
+    
+    
+    <br>
+    <br>
+    <div id="choices"></div>
+    <br>
+    <br>
+    <div id="guesses"></div>
+    <br>
+    <br>
+    <div id="win"></div>
+    <br>
+    <br>
+    <br>
+    <div id="hide"><button id="repeat">Play again?</button></div>
+
+</div>
+
+</html>
