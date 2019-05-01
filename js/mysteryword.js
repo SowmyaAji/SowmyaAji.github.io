@@ -105,10 +105,12 @@ $("#e").on('click', function () {
 
 $("#m").on('click', function () {
     myWord(mediumWord);
+    $("#difficulty").hide()
 })
 
 $("#d").on('click', function () {
     myWord(hardWord);
+    $("#difficulty").hide()
 })
 
 function playAgain() {
