@@ -30,6 +30,7 @@ let myWord = (words) => {
 
         )
     $("#guess").show()
+
     let guesses = 8;
     let guessedLetters = []
 
@@ -46,7 +47,7 @@ let myWord = (words) => {
 
             }
             else {
-                displayWord.push("_")
+                displayWord.push("_ ")
             }
         }
         console.log(displayWord)

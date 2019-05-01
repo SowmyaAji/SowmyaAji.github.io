@@ -3,6 +3,7 @@
     display: inline-block;  
     margin-left: 25%;
     margin-top: 5%;
+    font-family: 'Slabo 27px', serif;
 }
 @media (max-width: 800px) {
     .main {
@@ -10,25 +11,32 @@
         display: inline-block;
         margin-left: 1%;
         margin-top:5%;
+        font-family: 'Slabo 27px', serif;
     }
 }
 a {
     padding-right: 30px;
     float: right;
+    font-family: 'Slabo 27px', serif;
 }
 
 header {
-    background-color: gainsboro;
+    background-color: orange;
     height: 60px;
     padding-top: 5px;
+    font-family: 'Slabo 27px', serif;
 }
 
 button {
-    height: 25px;
+    height: 35px;
+    background-color: orange;
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
     
 }
 
 input {
     height: 25px;
     text-align: center;
+    font-family: 'Slabo 27px', serif;
 }
