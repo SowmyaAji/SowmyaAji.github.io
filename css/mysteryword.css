@@ -1,10 +1,17 @@
 .main {
     text-align: center;
-    display: inline-block;
+    display: inline-block;  
     margin-left: 25%;
     margin-top: 5%;
 }
-
+@media (max-width: 800px) {
+    .main {
+        text-align: center;
+        display: inline-block;
+        margin-left: 1%;
+        margin-top:5%;
+    }
+}
 a {
     padding-right: 30px;
     float: right;
