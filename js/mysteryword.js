@@ -100,6 +100,7 @@ let myWord = (words) => {
 
 $("#e").on('click', function () {
     myWord(easyWord);
+    $("#difficulty").hide()
 })
 
 $("#m").on('click', function () {
