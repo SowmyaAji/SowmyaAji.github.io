@@ -338,14 +338,14 @@ $.get("/api/my_snippets/").then(function (snippets) {
                 hear or opt for their favorite song/album using just the click of a button on a webpage. This app is
                 the result.</p>
             <h5>The Team</h5>
-            <p>This was a solo project
+            <p>This is a solo side project of mine
             <a href="https://linkedin.com/in/sowmya-aji/" target="_blank" rel="noopener noreferrer"><img src="images/Sowmya.jpeg" class="linked"></a></p>
             <br>
             <br>
             <h5>How I did it</h5>
-            <p>I researched the iTunes API and programmed JavaScript and Ajax to work with the HTML5 radio
-                buttons. Have designed the page using just vanilla CSS and HTML5.</p>
-            <p>Here is a screenshot of the webpage:</p>
+            <p>I first did it with JavaScript and jQuery, researched the iTunes API and programmed Ajax to work with the HTML5 radio
+                buttons. I designed the page using just vanilla CSS and HTML5.</p>
+            <p>Here is a screenshot of the old webpage:</p>
             <img src="images/singalong.png">
             <br><br>
             <p>Figuring out how to get the radio buttons to play the tunes and how to set up a search bar were the
@@ -365,7 +365,49 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
                 </code>    
                 </pre>
             </p>
-            <a href="https://github.com/momentum-cohort-2018-10/w6-itunes-search-SowmyaAji"  class="black left" target="_blank" rel="noopener noreferrer">Full Code</a>
+
+    <h5>Project redesign</h5>
+        <p>As I learnt React JS however, I felt the project would be much better if I did it in this framework. So I did a full redesign in React JS. Here is some of the code I used: </p>
+
+        <pre>
+        <code class="language-javascript" contenteditable spellcheck="false">
+        searchHandler = (evt) => {
+
+            this.searchQuery(evt.target.value);
+
+        }
+
+        searchQuery = (query) => {
+            const queryUrl = 'https://itunes.apple.com/search?media=music&limit=20&term=' + query;
+            jsonp(queryUrl, null, (err, data) => {
+            if (err) {
+                return <div>Sorry something went wrong! Please try something else</div>;
+            } else {
+                this.setState({ songs: data.results });
+            }
+            });
+        }
+
+        selectSong = (song) => {
+            this.setState({ playSong: song });
+        }
+
+        hearSong = () => {
+            if (this.state.playSong) {
+            return (<div>
+                <ReactAudioPlayer
+                src={this.state.playSong.previewUrl}
+                autoPlay
+                controls
+                />
+            </div>
+            );
+            }
+        }
+        </code>
+        </pre>
+
+            <a href="https://github.com/SowmyaAji/SingALong-ReactJS"  class="black left" target="_blank" rel="noopener noreferrer">Full Code</a>
             
             <hr>
         </div>
