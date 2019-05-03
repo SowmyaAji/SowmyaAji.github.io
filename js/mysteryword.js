@@ -34,6 +34,7 @@ let myWord = (words) => {
     let guesses = 8;
     let guessedLetters = []
 
+
     $("#go").on('click', function () {
         let letter = $("#letter").val().toUpperCase();
         guessedLetters.push(letter)
