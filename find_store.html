@@ -39,10 +39,9 @@ let initialLatLng = [35.9957436, -78.9012117]
 let mymap = L.map('mapid').setView(initialLatLng, 15);
 
 //get the initial map from the Leaflet API
-const osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-
-}).addTo(mymap);
+const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
 
 //set initial marker at the store nearest to the sample latitude and longitude
