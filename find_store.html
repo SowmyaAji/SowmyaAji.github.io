@@ -39,11 +39,13 @@ let initialLatLng = [35.9957436, -78.9012117]
 let mymap = L.map('mapid').setView(initialLatLng, 15);
 
 //get the initial map from the Leaflet API
-const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
 
 
+const osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+
+}).addTo(mymap);
+    
 //set initial marker at the store nearest to the sample latitude and longitude
 let mylatLng = [35.966045, -78.9587215]
 let marker = L.marker(mylatLng).addTo(mymap);
@@ -68,9 +70,11 @@ function myFetch(address) {
         .then(blob => blob.json())
         .then(data => {
             let addLat = data.features[0].geometry.coordinates[1]
+            console.log(addLat)
             addLat = parseFloat(addLat)
             let addLong = data.features[0].geometry.coordinates[0]
             addLong = parseFloat(addLong)
+            console.log(addLong)
             getStoreLocs(addLat, addLong)
         })
 }
