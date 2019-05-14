@@ -51,9 +51,114 @@
         </div>
         <div class="projects-main scrollable" id="top">
          
-         <br><br>
+         <br><br><br><br><br>
+
+         <div id="StoreNearMe">
+        
+         <a href="find_store.html"><h4 class="white">StoreNearMe</h4></a> <br><br>
+          <h5>What the project is about:</h5><br>
+          <p>It started off as a code challenge issued by a company to me and turned into a completely fascinating side-project that is still growing wings. I had to figure out which was the nearest store to any address given in the US. All I had was a long list  of [1,781]store addresses and geographical locations.</p>
+
+           <h5>The Team</h5>
+            <p>This is a solo side project of mine
+            <a href="https://linkedin.com/in/sowmya-aji/" target="_blank" rel="noopener noreferrer"><img src="images/Sowmya.jpeg" class="linked"></a></p>
+            
+            
+            <h5>How I did it</h5>
+            <br>
+            <p>I wrote the entire backend code in Python first, by accessing the address inputed through the command line (using argparse). I used the <a href="https://geocoder.readthedocs.io/providers/OpenStreetMap.html" target="_blank" rel="noopener noreferrer">Geocoder Open Street Map</a> to get the geographical codes (latitude and longitude) of the address location.<p>
+            
+            <p>Then I researched how to find out the distance between two locations on earth, did some segues like the <a href+"http://artis.imag.fr/~Xavier.Decoret/resources/maths/manhattan/html/" target="_blank" rel="noopener noreferrer">Manhattan formula</a>, but finally found consensus among academics that the <a href="https://en.wikipedia.org/wiki/Haversine_formula" target="_blank" rel="noopener noreferrer">Haversine formula</a> -- a complex bit of trignometry that uses the earth's radius as a measure -- was the best way to do this. I found the code for this also, online from this <a href="https://www.geodatasource.com/developers/javascript" target="_blank" rel="noopener noreferrer">website</a>  and used it will full gratitude for the world of open source! Here is the code I used:</p>
+            <pre>
+            <code class="language-python" contenteditable spellcheck="false">
+    def distance_between_points(latitude1, longitude1, latitude2, longitude2):
+    """calculate distance based on the radius of the earth and trignometry"""
+    # Computed using the Haversine formula
+    # https://en.wikipedia.org/wiki/Haversine_formula
+    # translated from https://www.geodatasource.com/developers/javascript
+    if latitude1 == latitude2 and longitude1 == longitude2:
+        return 0
+
+    rad_latitude1 = math.pi * latitude1/180
+    rad_latitude2 = math.pi * latitude2/180
+    theta = longitude1 - longitude2
+    rad_theta = math.pi * theta/180
+    dist = math.sin(rad_latitude1) * math.sin(rad_latitude2) +\
+        math.cos(rad_latitude1) * math.cos(rad_latitude2) * math.cos(rad_theta)
+    if dist > 1:
+        dist = 1
+    dist = math.acos(dist)
+    dist = dist * 180/math.pi
+    dist = dist * 60 * 1.1515
+    return dist      
+            </code>
+            </pre>
+ <p>After all that math, I wrote a for-loop that went through the stores data that I had and find the store with the shortest distance to the input address.</p>
+ <pre>
+ <code class="language-python" contenteditable spellcheck="false">
+ def nearest(latitude, longitude, store_locations):
+    """Find the nearest store using latitute, longitude and the store_locations given in the file"""
+    nearest = None
+    distance = sys.maxsize
+    latitude = float(latitude)
+    longitude = float(longitude)
+    for location in store_locations:
+        loc_latitude = float(location["Latitude"])
+        loc_longitude = float(location["Longitude"])
+        dist = distance_between_points(
+            latitude, longitude, loc_latitude, loc_longitude)
+        if dist < distance:
+            distance = dist
+            nearest = location
+    return (nearest, distance)
+ </code>
+ </pre>
+ <br>
+ <p>Once the backend was built, I wanted to see if I could build a frontend with Leaflet.js which I wanted to learn. I thought it might be easier to do the backend with jQuery rather than Python and integrate the two quickly. I 'translated' the Python code to jQuery, used a different API -- <a href='http://photon.komoot.de/api/?limit=1&q='>Photon Komoot Api</a> to access the geographical coordinates of the inputted address. All the rest of the code was the same, except written with jQuery. Here is the main code which updates the Leaflet map and marker and shows the nearest store: 
+ </p>
+<pre>
+<code class="language-javascript" contenteditable spellcheck="false">
+//use the address geographical coordinates and the coordinates found in the parsed json file to calculate which is the store nearest to that address. Set the map to the address location and the marker to the store location
+function findNearest(addLat, addLong, storeArr) {
+    let distance = null;
+    let nearest = null;
+    let latLong = [];
+    storeArr.forEach((location) => {
+        let storeLat = (location['Latitude'])
+        storeLat = parseFloat(storeLat)
+        let storeLong = (location['Longitude'])
+        storeLong = parseFloat(storeLong)
+        let dist = getDistance(addLat, addLong, storeLat, storeLong)
+        dist = parseFloat(dist);
+        if (distance === null || dist < distance) {
+            distance = dist;
+            distance = parseFloat(distance)
+            nearest = location;
+            latLong = [storeLat, storeLong]
+        }
+    })
+    let addLatLong = [addLat, addLong]
+    initialLatLong = addLatLong
+    mylatLng = latLong
+    marker.setLatLng(mylatLng).update();
+    mymap.setView(mylatLng, 8);
+    let storeadd = '';
+    $.each(nearest, function(key, value) {
+        storeadd += ' ' + key + ' ' + value;
+    });
+    marker.setPopupContent(storeadd);
+    console.log(storeadd)
+    $("#storeadd").val("Distance: " + distance + " miles")
+     }
+</code>
+</pre>
+<a href="https://github.com/SowmyaAji/StoreNearMeJS/blob/master/find_store.html"  class="black left" target="_blank" rel="noopener noreferrer">Full
+                    Code</a>
+               <hr> 
+
+         </div>
         <div id="getJustice">
-       <br><br><br>
+       <br><br>
             <a href="http://getjustice.herokuapp.com" class="black" target="_blank" rel="noopener noreferrer">
                 <h4 class="white">getJustice</h4></a>
             <a href="https://chrome.google.com/webstore/detail/lpofflhiaihmkcadpgakbdfhbfbkpiod/"  class="extn-button" target="_blank" rel="noopener noreferrer"><span data-tooltip class="bottom" tabindex="2" title="This extension is an attached tool to the chrome browser which allows you to take screenshots of the content of the webpage you are on and send it along with a report to the authorities and civil rights groups."><img src="images/getJusticeExtension.png" height="60px" width="200px"></span></a>
