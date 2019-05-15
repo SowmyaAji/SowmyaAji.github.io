@@ -157,6 +157,48 @@ function findNearest(addLat, addLong, storeArr) {
                <hr> 
 
          </div>
+
+<div id="MapWithMe">
+<a href="map2.html" class="black">
+                <h4 class="white">MapWithMe</h4></a>
+                <br>
+<h5>What the project is about:</h5>
+<br>
+<p>I have long been fascinated with georaphical representation of data. I was researching how to this and came across the fantastic <a href="https://python-visualization.github.io/folium/" target="_blank" rel="noopener noreferrer">Folium </a> framework that uses Python data and combines it with the power of the Leaflet.js library to make a great job of showing data on a map.</p>
+
+<h5>How I did it:</h5>
+<br>
+<p>I began by learning the ropes with the help of this great <a href="https://www.youtube.com/watch?v=4RnU5qKTfYY"> tutorial </a> by <a href="https://github.com/bradtraversy/python_folium_example" target="_blank" rel="noopener noreferrer"> Brad Traversy Traversy</a>. I used the <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer"> pandas library </a> to read the data from the csv files. With the use of Folium that automatially links  <a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet.js </a>, the code for this map is extremely simple:</p>
+
+<pre>
+<code class="language-python" contenteditable spellcheck="false">
+#create legend bins
+bins = list(state_data['Unemployment'].quantile([0, 0.25, 0.5, 0.75, 1]))
+# create map object
+m = folium.Map([48, -102], zoom_start=3)
+folium.Choropleth(
+    geo_data=states,
+    name='choropleth',
+    data=state_data,
+    columns=['State', 'Unemployment'],
+    key_on='feature.id',
+    fill_color='BuPu',
+    fill_opacity=0.7,
+    line_opacity=0.2,
+    legend_name="Unemployment Rate %",
+    bins=bins,
+    reset=True
+).add_to(m)
+m.save('map2.html')
+</code>
+</pre>
+
+<p>I have made other simple maps also and played around with the custom marker features of Folium. Do check out the full code for more. </p>
+
+<a href="https://github.com/SowmyaAji/MapWithMe"  class="black left" target="_blank" rel="noopener noreferrer">Full
+                    Code</a>
+<hr>                    
+</div>
         <div id="getJustice">
        <br><br>
             <a href="http://getjustice.herokuapp.com" class="black" target="_blank" rel="noopener noreferrer">
