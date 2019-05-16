@@ -41,8 +41,8 @@ let mymap = L.map('mapid').setView(initialLatLng, 15);
 //get the initial map from the Leaflet API
 
 
-const osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+const osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
 
 }).addTo(mymap);
     
@@ -65,17 +65,17 @@ getAdd()
 //take the address from the input box, search teh //photon.komoot.de/api/ for its geographical coordinates and set them to variables
 function myFetch(address) {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const queryUrl = encodeURI('http://photon.komoot.de/api/?limit=1&q=' + address)
+    const queryUrl = encodeURI('https://nominatim.openstreetmap.org/search/?limit=1&format=json&q=' + address)
     fetch(proxyUrl + queryUrl)
         .then(blob => blob.json())
         .then(data => {
-            let addLat = data.features[0].geometry.coordinates[1]
-            console.log(addLat)
+            let addLat = data[0].lat
             addLat = parseFloat(addLat)
-            let addLong = data.features[0].geometry.coordinates[0]
+            console.log(addLat)
+            let addLong = data[0].lon
             addLong = parseFloat(addLong)
             console.log(addLong)
-            getStoreLocs(addLat, addLong)
+            getStoreLocs(addLat, addLong) 
         })
 }
 
