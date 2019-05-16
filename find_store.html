@@ -13,7 +13,14 @@
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-  
+<style>
+#mapid {
+            height: 800px;
+            width: 1200px;
+            border: 1px solid black;
+        }
+</style>
+
 </head>
 
 <body>
@@ -62,7 +69,7 @@ function getAdd() {
 }
 getAdd()
 
-//take the address from the input box, search teh //photon.komoot.de/api/ for its geographical coordinates and set them to variables
+//take the address from the input box, search the nominatim open street map search engine for the address' geographical coordinates and set them to variables
 function myFetch(address) {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const queryUrl = encodeURI('https://nominatim.openstreetmap.org/search/?limit=1&format=json&q=' + address)
@@ -113,14 +120,15 @@ function findNearest(addLat, addLong, storeArr) {
     initialLatLong = addLatLong
     mylatLng = latLong
     marker.setLatLng(mylatLng).update();
-    mymap.setView(mylatLng, 8);
     let storeadd = '';
     $.each(nearest, function(key, value) {
         storeadd += ' ' + key + ' ' + value;
     });
     marker.setPopupContent(storeadd);
-    console.log(storeadd)
     $("#storeadd").val("Distance: " + distance + " miles")
+    mymap.setView(mylatLng, 15).update();
+    console.log(storeadd)
+    
     // return {
     //     addLatLong: addLatLong,
     //     location: nearest, distance: distance, latLong: latLong
