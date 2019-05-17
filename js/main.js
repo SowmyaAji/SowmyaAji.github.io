@@ -13,18 +13,6 @@ $(".close-button").on('click', function () {
 
 
 
-$(document).ready(function () {
-    $('.fade').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        fade: true,
-        slide: 'div',
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-});
 
 $(document).foundation();
 
