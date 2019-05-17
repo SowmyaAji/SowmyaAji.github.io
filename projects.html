@@ -72,7 +72,7 @@ $(document).ready(function () {
         
          <a href="find_store.html"><h4 class="white">StoreNearMe</h4></a> <br><br>
           <h5>What the project is about:</h5><br>
-          <p>It started off as a code challenge issued by a company to me and turned into a completely fascinating side-project that is still growing wings. I had to figure out which was the nearest store to any address given in the US. All I had was a long list  of [1,781]store addresses and geographical locations.</p>
+          <p>It started as a code challenge issued by a company to me and turned into a completely fascinating side-project that is still growing wings. I had to figure out which was the nearest store to any address given in the US. All I had was a long list  of [1,781]store addresses and geographical locations.</p>
 
            <h5>The Team</h5>
             <p>This is a solo side project of mine
@@ -129,7 +129,7 @@ $(document).ready(function () {
  </code>
  </pre>
  <br>
- <p>Once the backend was built, I wanted to see if I could build a frontend with Leaflet.js which I wanted to learn. I thought it might be easier to do the backend with jQuery rather than Python and integrate the two quickly. I 'translated' the Python code to jQuery, used a different API -- <a href='http://photon.komoot.de/api/?limit=1&q='>Photon Komoot Api</a> to access the geographical coordinates of the inputted address. All the rest of the code was the same, except written with jQuery. Here is the main code which updates the Leaflet map and marker and shows the nearest store: 
+ <p>Once the backend was built, I wanted to see if I could build a frontend with Leaflet.js which I wanted to learn. I thought it might be easier to do the backend with jQuery rather than Python and integrate the two quickly. I 'translated' the Python code to jQuery, used a different API -- <a href='https://nominatim.openstreetmap.org/search/?limit=1&format=json&q='>Nominatim Open Street Map</a> to access the geographical coordinates of the inputted address. All the rest of the code was the same, except written with jQuery. Here is the main code which updates the Leaflet map and marker and shows the nearest store: 
  </p>
 <pre>
 <code class="language-javascript" contenteditable spellcheck="false">
@@ -138,6 +138,7 @@ function findNearest(addLat, addLong, storeArr) {
     let distance = null;
     let nearest = null;
     let latLong = [];
+
     storeArr.forEach((location) => {
         let storeLat = (location['Latitude'])
         storeLat = parseFloat(storeLat)
@@ -156,21 +157,27 @@ function findNearest(addLat, addLong, storeArr) {
     initialLatLong = addLatLong
     mylatLng = latLong
     marker.setLatLng(mylatLng).update();
-    mymap.setView(mylatLng, 8);
     let storeadd = '';
     $.each(nearest, function(key, value) {
         storeadd += ' ' + key + ' ' + value;
     });
     marker.setPopupContent(storeadd);
-    console.log(storeadd)
     $("#storeadd").val("Distance: " + distance + " miles")
-     }
+    mymap.setView(mylatLng, 15).update();
+    console.log(storeadd)
+    
+    // return {
+    //     addLatLong: addLatLong,
+    //     location: nearest, distance: distance, latLong: latLong
+    // }
+}
+
 </code>
 </pre>
 <p> I also built a map of all the stores in the US with their addresses showing when markers are clicked, using Folium and Python. This is another of the <a href="projects.html#MapWithMe">MapWithMe </a> projects listed below. Click here to see the full map: <a href="stores.html" class="black">Map of all stores</a></p>
 <br> 
 <a href="https://github.com/SowmyaAji/StoreNearMeJS/blob/master/find_store.html"  class="black left" target="_blank" rel="noopener noreferrer">Full
-                    Code [Leaftlet.js, jQuery]</a>
+                    Code [JavaScript]</a>
 <a href="https://github.com/SowmyaAji/StoreNearMe/blob/solution/find_store.py"  class="black left" target="_blank" rel="noopener noreferrer">Full
                     Code [Python]</a>
 
