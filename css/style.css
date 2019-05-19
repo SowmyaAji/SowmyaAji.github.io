@@ -17,7 +17,7 @@ h6{
 }
 .game {
   
-color: brown;
+color:#fe59c2;
   text-decoration: underline;
   font-family: 'Slabo 27px', serif;
   font-size: 24px;
@@ -27,7 +27,7 @@ color: brown;
 
   .game {
   
-     color:lime;
+     color: #fe59c2 ;
       text-decoration: underline;
       font-family: 'Slabo 27px', serif;
       font-size: 24px;
@@ -37,13 +37,20 @@ color: brown;
 }
 .intro {
   font-style: italic;
-  color: ivory;
+  padding-left: 15px;
+  background: -webkit-linear-gradient(yellow,ivory, cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
 }
-@media (max-width: 1024px) {
-  .intro {
-  color:  brown;
 
-  }
+ @media (max-width: 1024px) {
+  .intro {
+  background: -webkit-linear-gradient(black, cyan, #fe59c2, yellow, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  } 
 
 }
 
@@ -68,6 +75,7 @@ color: brown;
 header {
   background: transparent;
   padding:10px;
+  margin-bottom: 0;
 }
 
 
@@ -201,10 +209,9 @@ a {
     width: 100%;
     display: block;
     word-wrap: break-word;
-    position: relative;
-     margin-top: 10%; 
-    padding-left: 20%; 
-    padding-right:40%; 
+    position: relative; 
+    padding-left: 18%; 
+    padding-right:45%; 
    
     
   }
