@@ -23,7 +23,7 @@ color: blueviolet;
   font-size: 24px;
   background: transparent;
 }
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
 
   .game {
   
@@ -34,7 +34,7 @@ color: blueviolet;
       background: transparent;
     }
 
-}
+} */
 .container {
    min-height:100%;
    position:relative;
