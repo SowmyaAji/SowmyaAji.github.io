@@ -17,7 +17,7 @@ h6{
 }
 .game {
   
-color: blueviolet;
+color: brown;
   text-decoration: underline;
   font-family: 'Slabo 27px', serif;
   font-size: 24px;
@@ -37,10 +37,12 @@ color: blueviolet;
 }
 .intro {
   font-style: italic;
+  color: ivory;
 }
 @media (max-width: 1024px) {
   .intro {
-  color:  blueviolet;
+  color:  brown;
+
   }
 
 }
