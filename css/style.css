@@ -35,6 +35,13 @@ color: blueviolet;
     }
 
 }
+@media (max-width: 1024px) {
+  .intro {
+  color:  blueviolet;
+  }
+
+}
+
 .container {
    min-height:100%;
    position:relative;
