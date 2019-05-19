@@ -35,6 +35,9 @@ color: blueviolet;
     }
 
 }
+.intro {
+  font-style: italic;
+}
 @media (max-width: 1024px) {
   .intro {
   color:  blueviolet;
