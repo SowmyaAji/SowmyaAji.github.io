@@ -44,15 +44,7 @@ color:#fe59c2;
     
 }
 
- @media (max-width: 1024px) {
-  .intro {
-  background: -webkit-linear-gradient(black, cyan, #fe59c2, yellow, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  } 
-
-}
+ 
 
 .container {
    min-height:100%;
