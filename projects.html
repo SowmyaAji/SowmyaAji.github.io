@@ -223,7 +223,7 @@ function findNearest(addLat, addLong, storeArr) {
 
 <h5>How I did it:</h5>
 <br>
-<p>I began by learning the ropes with the help of this great <a href="https://www.youtube.com/watch?v=4RnU5qKTfYY"> tutorial </a> by <a href="https://github.com/bradtraversy/python_folium_example" target="_blank" rel="noopener noreferrer"> Brad Traversy Traversy</a>. I used the <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer"> pandas library </a> to read the data from the csv files. With the use of Folium that automatially links  <a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet.js </a>, the code for this map is extremely simple:</p>
+<p>I began by learning the ropes with the help of this great <a href="https://www.youtube.com/watch?v=4RnU5qKTfYY"> tutorial </a> by <a href="https://github.com/bradtraversy/python_folium_example" target="_blank" rel="noopener noreferrer"> Brad Traversy </a>. I used the <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer"> pandas library </a> to read the data from the csv files. With the use of Folium that automatially links  <a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet.js </a>, the code for this map is extremely simple:</p>
 
 <pre>
 <code class="language-python" contenteditable spellcheck="false">
@@ -616,11 +616,11 @@ document.getElementById('musicbox').addEventListener("click", function (event) {
         <div id="Pathfinder">
          <br><br><br>
         <a href="https://github.com/momentum-cohort-2018-10/w2-pathfinder-SowmyaAji" class="black" target="_blank" rel="noopener noreferrer">
-        <h4 class="white"><strong>Pathfinder</strong></h4>  
+        <h4 class="white"><strong>Tracer</strong></h4>  
              </a>
             <br><br>
             <h5>What the project is about:</h5>
-            <p>How are maps plotted? By using elevations and depths. How does one find a path through the mountians? Well, obviously, one takes the lowest elevation and goes. Yes, true. But how to get the computer to figure out which is the lowest elevation and take that path? That was the challenge that I faced, by developing a Python program for the app, the Pathfinder.</p>
+            <p>How are maps plotted? By using elevations and depths. How does one find a path through the mountians? Well, obviously, one takes the lowest elevation and goes. Yes, true. But how to get the computer to figure out which is the lowest elevation and take that path? That was the challenge that I faced, by developing a Python program for the app, the Tracer.</p>
             <h5>The Team</h5>
             <p>This was a solo project
             <a href="https://linkedin.com/in/sowmya-aji/" target="_blank" rel="noopener noreferrer"><img src="images/Sowmya.jpeg" class="linked"></a></p>
@@ -716,7 +716,7 @@ for row in range(len(elevation_data)):
 
             <li class = "orbit-slide">
                <div>
-                  <h5 class = "text-center">How to plot a path</h5>
+                  <h5 class = "text-center">How to plot the tracer path</h5>
                   <img src="images/elevation_map 2.png" class="left">
                   <p class = "text-center">I evidently needed to use the same put pixel method to plot the path also, so I gave it a different color, this time red. I figured out the formula to get the pixel to go forward: x+1, with y equal to 0. The options were: to go to the row above (x+1, y+1), to go to the row below, (x+1, y-1). The path was the one of the three with the lowest elevation. There was a problem  when the path was either at the top of the image or at the bottom, as one of the rows (either up or down) was not an option, as it went out of the map. I ended up importing sys and using infinity to ensure the path did not go out.  </p>
                </div>
