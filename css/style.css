@@ -43,8 +43,7 @@ color:#fe59c2;
   -webkit-text-fill-color: transparent;
     
 }
-
- 
+  
 
 .container {
    min-height:100%;
@@ -148,7 +147,14 @@ h1 {
   font-size: 5rem;
   font-family: 'Slabo 27px', serif;
 }
+@media (max-width: 1050px){
+   h1 {
+    font-size:4rem;
+    
+    
 
+  }
+}
 
 @media (max-width:640px) {
   h1 {
