@@ -37,14 +37,37 @@ color:#fe59c2;
 }
 .intro {
   font-style: italic;
-  padding-left: 15px;
+   padding-right: 25px; 
   background: -webkit-linear-gradient(yellow,ivory, cyan, white, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
 }
-  
+@media (max-width: 1025px) {
 
+.intro {
+  font-style: italic;
+  padding-right: 25px;
+  background: -webkit-linear-gradient(brown, maroon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+}
+  
+@media (max-width: 770px) {
+.intro {
+  font-style: italic;
+  padding-right: 25px;
+ 
+  background: -webkit-linear-gradient(yellow,ivory, cyan,  pink,purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+}
 .container {
    min-height:100%;
    position:relative;
