@@ -41,6 +41,7 @@ color:#fe59c2;
   background: -webkit-linear-gradient(yellow,ivory, cyan, white, pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+ 
     
 }
 @media (max-width: 1025px) {
@@ -48,7 +49,7 @@ color:#fe59c2;
 .intro {
   font-style: italic;
   padding-right: 25px;
-  background: -webkit-linear-gradient(brown, maroon);
+  background: -webkit-linear-gradient(coral, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
@@ -60,7 +61,7 @@ color:#fe59c2;
 .intro {
   font-style: italic;
   padding-right: 25px;
-  background: -webkit-linear-gradient(yellow,ivory, cyan,  pink,purple);
+  background: -webkit-linear-gradient(yellow,ivory, cyan,coral, orange,pink, lime, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
