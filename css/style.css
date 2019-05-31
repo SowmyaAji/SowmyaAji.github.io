@@ -44,20 +44,8 @@ color:#fe59c2;
  
     
 }
-@media (max-width: 1025px) {
-
-.intro {
-  font-style: italic;
-  padding-right: 25px;
-  background: -webkit-linear-gradient(coral, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    
-}
-
-}
   
-@media (max-width: 770px) {
+@media (max-width: 1270px) {
 .intro {
   font-style: italic;
   padding-right: 25px;
