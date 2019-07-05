@@ -20,7 +20,7 @@ h6{
 color:#fe59c2;
   text-decoration: underline;
   font-family: 'Slabo 27px', serif;
-  font-size: 24px;
+  font-size: 22px; 
   background: transparent;
 }
 @media (max-width: 380px) {
@@ -203,7 +203,9 @@ a {
     color: white;
   }
 }
-
+.tut {
+  font-size: 22px;
+}
 .shorttext { display: none; }
 
 
