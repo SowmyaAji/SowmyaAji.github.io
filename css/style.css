@@ -252,7 +252,7 @@ audio {
 
 @media (max-width:680px) {
   audio {
-   
+    background:black;
     width: 250px;
     height: 10px;
     padding-left: 10px;
