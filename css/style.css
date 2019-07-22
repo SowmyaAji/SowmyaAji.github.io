@@ -23,7 +23,7 @@ color:#fe59c2;
   font-size: 22px; 
   background: transparent;
 }
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
 
   .game {
   
@@ -34,7 +34,7 @@ color:#fe59c2;
       background: transparent;
     }
 
-}
+} */
 .intro {
   font-style: italic;
    padding-right: 25px; 
