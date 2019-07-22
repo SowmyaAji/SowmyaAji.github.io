@@ -35,6 +35,8 @@ color:#fe59c2;
     }
 
 } */
+
+
 .intro {
   font-style: italic;
    padding-right: 25px; 
@@ -189,9 +191,7 @@ a {
   cursor: pointer;
 }
 
-.fixline {
-  line-height: 30px;
-}
+
 
 @media (max-width: 850px) {
 .color {
@@ -250,11 +250,11 @@ audio {
 
 @media (max-width:680px) {
   audio {
-    background: transparent;
-    width: 150px;
+   
+    width: 250px;
     height: 10px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; 
   }
 
 }
@@ -381,18 +381,16 @@ header {
 
 
 }
-@media (max-width:600px){
 
-  .design {
-    background:black;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-bottom: 5%;  
-    text-align: justify;
-    text-justify: inter-word;
-   
-   }
+.design1{
 
+background: transparent;
+ padding-top: 15%;
+ padding-left: 7%;
+ padding-right: 7%;
+ padding-bottom: 5%;  
+ text-align: justify;
+ text-justify: inter-word;
 
 }
 
