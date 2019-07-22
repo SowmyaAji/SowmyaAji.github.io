@@ -221,6 +221,7 @@ a {
     display: block;
     word-wrap: break-word;
     position: relative; 
+    padding-top: 7%;
     padding-left: 18%; 
     padding-right:40%; 
    
@@ -234,6 +235,7 @@ a {
     display: block;
    word-wrap: break-word;
     position: relative;
+    padding-top: 35%;
    padding-right:25%;
    
     
