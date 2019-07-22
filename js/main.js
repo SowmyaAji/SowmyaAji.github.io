@@ -1,13 +1,8 @@
-
-
-
-
-
 $(".custom").on('click', function () {
     $("#name").hide();
 })
 
-$(".close-button").on('click', function () {
+$(".close-button, .reveal-overlay").on('click', function () {
     $("#name").show();
 })
 
