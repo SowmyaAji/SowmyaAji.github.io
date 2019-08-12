@@ -1,0 +1,102 @@
+[
+    {
+        "Name": "Brier Creek Healthplex",
+        "Tel": "919-350-8000",
+        "Address": "8001 T.W. Alexander Drive",
+        "City": "Raleigh",
+        "State": "NC",
+        "ZipCode": 27617,
+        "Latitude": 35.907875,
+        "Longitude": -78.77296
+    },
+    {
+        "Name": "Garner Healthplex",
+        "Tel": " 919-350-8000",
+        "Address": " 400 US Highway 70",
+        "City": " East Garner",
+        "State": " NC",
+        "ZipCode": 27529,
+        "Latitude": 35.655625,
+        "Longitude": -78.584906
+    },
+    {
+        "Name": "Garner Office",
+        "Tel": " 919-235-6565",
+        "Address": " 811 US 70",
+        "City": " WestGarner",
+        "State": " NC",
+        "ZipCode": 27529,
+        "Latitude": 35.655625,
+        "Longitude": -78.584906
+    },
+    {
+        "Name": "North Hospital",
+        "Tel": " 919-350-8000",
+        "Address": " 10000 Falls of Neuse Road",
+        "City": " Raleigh",
+        "State": " NC",
+        "ZipCode": 27614,
+        "Latitude": 35.945927,
+        "Longitude": -78.619492
+    },
+    {
+        "Name": "Raleigh - Orthopaedic Urgent Care",
+        "Tel": " 833-678-4682",
+        "Address": " Wake Orthopaedics North Hospital Physician Office Pavilion 10010 Falls of Neuse Road Suite 10",
+        "City": " Raleigh",
+        "State": " NC",
+        "ZipCode": 27614,
+        "Latitude": 35.945927,
+        "Longitude": -78.619492
+    },
+    {
+        "Name": "Children\u2019s Hospital",
+        "Tel": "919-350-8000",
+        "Address": "3000 New Bern Avenue",
+        "City": "Raleigh",
+        "State": " NC",
+        "ZipCode": 27610,
+        "Latitude": 35.7444,
+        "Longitude": -78.546278
+    },
+    {
+        "Name": "Raleigh Campus Adult",
+        "Tel": " 919-350-8000",
+        "Address": " 3000 New Bern Avenue",
+        "City": " Raleigh",
+        "State": " NC",
+        "ZipCode": 27610,
+        "Latitude": 35.7444,
+        "Longitude": -78.546278
+    },
+    {
+        "Name": "Forestville Crossing Office",
+        "Tel": " 919-235-6500",
+        "Address": "2930 Forestville Road",
+        "City": " Raleigh",
+        "State": " NC",
+        "ZipCode": 27616,
+        "Latitude": 35.866734,
+        "Longitude": -78.541216
+    },
+    {
+        "Name": "Fuquay-Varina Office",
+        "Tel": " 919-235-6560",
+        "Address": " 231 N. Judd Parkway",
+        "City": " Fuquay-Varina",
+        "State": " NC",
+        "ZipCode": 27526,
+        "Latitude": 35.54401,
+        "Longitude": -78.829824
+    },
+    {
+        "Name": "Morrisville - Children's Urgent Care",
+        "Tel": " 919-467-7425",
+        "Address": " 6402 McCrimmon Parkway Suite 300",
+        "City": " Morrisville",
+        "State": " NC",
+        "ZipCode": 27560,
+        "Latitude": 35.857892,
+        "Longitude": -78.827698
+    }
+]

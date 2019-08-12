@@ -27,7 +27,7 @@ function myFetch(address) {
 
 //get the locations of the emergency listed in the parsed.json file
 function getHelpLocs(addLat, addLong) {
-    let url = 'parsed.json';
+    let url = 'find_help.json';
     $.getJSON(url, function (json) {
         let helpArr = json;
         findNearest(addLat, addLong, helpArr)
