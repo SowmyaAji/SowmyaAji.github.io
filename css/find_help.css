@@ -13,7 +13,9 @@ input {
     font-family: 'Slabo 27px', serif;
     
 }
-
+@media (max-width: 640px) {
+    .fulltext { display: none; }
+}
 
 textarea {
     border: transparent;
