@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedHelpNearMe</title>
+    <link rel="stylesheet" href="css/find_help.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<style>
+#mapid {
+            height: 800px;
+            width: 1200px;
+            border: 1px solid black;
+        }
+
+
+ 
+</style>
+
+</head>
+
+<body>
+    <header>
+    <hr><hr>
+        <img src="images/hospital.png">
+        <h1>MedHelpNearMe</h1>
+        <a href="index.html">Home</a>
+        <hr>
+        <hr>
+    </header>
+    <div id=wrapper>
+    <div><input type="text" id="addr" placeholder="Enter your address"><button id="addbtn">Go</button><textarea id="helpcenteradd" type="text"  placeholder="Distance to medical help" ></textarea></div>
+    
+    <br>
+    <div id="mapid"></div>
+
+</div>
+</body>
+ 
+
+<script src="js/findHelp.js"></script>
+
+
+</html>

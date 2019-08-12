@@ -1,0 +1,60 @@
+
+
+img {
+    float: right;
+}
+input {
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 15%;
+    font: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+    
+}
+
+
+textarea {
+    border: transparent;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+    width: 150px;
+    
+    height: 40px;
+    margin-bottom: 0%;
+    text-align: center;
+    line-height: 20px;
+    
+}
+
+header {
+    padding-top: 1%;
+    height: 60px;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+button {
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Slabo 27px', serif;
+    color: red;
+}
+
+a {
+    float: right;
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+wrapper {
+
+    display: inline-block;
+}
