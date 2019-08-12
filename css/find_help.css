@@ -4,7 +4,7 @@ img {
     float: right;
 }
 input {
-    height: 60px;
+    height: 30px;
     border: 1px black solid;
     border-radius: 15%;
     font: 16px;
@@ -34,7 +34,7 @@ textarea {
 header {
     padding-top: 1%;
     height: 60px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     width: 100%;
 }
 

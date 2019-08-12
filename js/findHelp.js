@@ -98,7 +98,7 @@ function getDistance(lat1, lon1, lat2, lon2, unit = "M") {
 }
 function initializeMap() {
     //initialize map with sample latitude and longitude
-    let initialLatLng = [35.9957436, -78.9012117]
+    let initialLatLng = [35.731139, -78.773206]
     mymap = L.map('mapid').setView(initialLatLng, 15);
 
     //get the initial map from the Leaflet API
