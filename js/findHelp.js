@@ -115,7 +115,7 @@ function initializeMap() {
     marker.setLatLng(mylatLng).update();
 
     //add simple popup to marker
-    marker.bindPopup("<b>Hi! I am the nearest medical help!").openPopup();
+    marker.bindPopup("<b>Hi! I am the nearest emergency help!").openPopup();
 }
 
 $(document).ready(initializeMap);
