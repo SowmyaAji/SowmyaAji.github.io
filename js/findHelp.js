@@ -93,7 +93,7 @@ function getDistance(lat1, lon1, lat2, lon2, unit = "M") {
         dist = dist * 60 * 1.1515;
         if (unit === "K") { dist = dist * 1.609344 }
         if (unit === "N") { dist = dist * 0.8684 }
-        return dist;
+        return dist.toFixed(2);
     }
 }
 function initializeMap() {
@@ -110,7 +110,7 @@ function initializeMap() {
     }).addTo(mymap);
 
     //set initial marker at the store nearest to the sample latitude and longitude
-    mylatLng = [35.791538, -78.781120]
+    mylatLng = [35.791538, -78.781120, 15]
     marker = L.marker(mylatLng).addTo(mymap);
     marker.setLatLng(mylatLng).update();
 
