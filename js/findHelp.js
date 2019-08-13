@@ -111,11 +111,24 @@ function initializeMap() {
 
     //set initial marker at the store nearest to the sample latitude and longitude
     mylatLng = [35.791538, -78.781120, 15]
+    mymap.panTo(mylatLng)
     marker = L.marker(mylatLng).addTo(mymap);
     marker.setLatLng(mylatLng).update();
 
     //add simple popup to marker
     marker.bindPopup("<b>Hi! I am the nearest emergency help!").openPopup();
 }
-
+window.addEventListener('resize', function (event) {
+    // get the width of the screen after the resize event
+    const width = document.documentElement.clientWidth;
+    const height = document.body.clientHeight;
+    // tablets are between 768 and 922 pixels wide
+    // phones are less than 768 pixels wide
+    if (width < 768) {
+        mymap.invalidateSize()
+        // } else {
+        //     // set the zoom level to 8
+        //     mymap.setZoom(15);
+    }
+});
 $(document).ready(initializeMap);
