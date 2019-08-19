@@ -61,7 +61,7 @@ function findNearest(addLat, addLong, helpArr) {
     marker.setLatLng(mylatLng).update();
     let helpadd = '';
     $.each(nearest, function (key, value) {
-        helpadd += ' ' + key + ': ' + value + '\n';
+        helpadd += key + ': ' + value + '\n';
     });
     marker.setPopupContent(helpadd);
     $("#helpcenteradd").val("Distance: " + distance + " miles")
@@ -125,7 +125,8 @@ window.addEventListener('resize', function (event) {
     // tablets are between 768 and 922 pixels wide
     // phones are less than 768 pixels wide
     if (width < 768) {
-        mymap.invalidateSize()
+        mymap.invalidateSize();
+
         // } else {
         //     // set the zoom level to 8
         //     mymap.setZoom(15);
