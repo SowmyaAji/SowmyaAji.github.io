@@ -46,6 +46,10 @@ color:#fe59c2;
  
     
 }
+
+.indent {
+  margin-left: 35%;
+}
   
 @media (max-width: 1270px) {
 .intro {
