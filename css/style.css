@@ -1,7 +1,6 @@
 /* homepage */
 
-html, 
-body {
+html, body {
    margin:0;
    padding:0;
    height:100%;
@@ -10,7 +9,8 @@ body {
    overflow-x: hidden; 
    
 } 
-  
+
+
 h6{
   font-weight: bold;
   font-family: 'Slabo 27px', serif;
