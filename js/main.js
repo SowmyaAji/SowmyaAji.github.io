@@ -29,7 +29,7 @@ var images = [
     'https://placeholdit.imgix.net/~text?txtsize=33&txt=four&w=100&h=100'
 ];
 
-const imgArray = ['../images/Paypal.jpg', '../images/back2.jpg', '../images/paypal1.jpeg', '../images/bulls2.jpg'];
+const imgArray = ['../images/side.jpg', '../images/Paypal.jpg', '../images/back2.jpg', '../images/paypal1.jpeg', '../images/bulls2.jpg'];
 
 let i = 0;
 const changeImage = setInterval(
