@@ -28,7 +28,7 @@ var images = [
 ];
 
 // image array used for the background image in the index page
-const imgArray = ['../images/paypal1.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/PayPal.jpg', '../images/kathak.jpg', '../images/back2.jpg', '../images/Mask.jpg', '../images/bulls2.jpg'];
+const imgArray = ['../images/paypal1.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/PayPal.jpg', '../images/kathak.jpg', '../images/back2.jpg', '../images/bulls2.jpg'];
 
 let i = 0;
 
@@ -39,4 +39,4 @@ const changeImage = setInterval(
         if (imgArray.length == i) {
             i = 0;
         }
-    }, 5000)
+    }, 7000)
