@@ -30,13 +30,18 @@ var images = [
 // image array used for the background image in the index page
 const imgArray = ['../images/paypal1.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/PayPal.jpg', '../images/kathak.jpg', '../images/back2.jpg', '../images/bulls2.jpg'];
 
+const introText = ['gone down mineshafts..', 'met a rocket scientist..', 'been in a soap opera..', 'slept in forests..', "chatted with Picasso's model..", 'wandered 7 countries..', 'flown in helicopters ..']
+
 let i = 0;
 
 const changeImage = setInterval(
     function () {
-        $('body').css('background-image', "url('" + imgArray[i] + "')");
+        $('#image').css('background-image', "url('" + imgArray[i] + "')");
+        $('#int').text(introText[i]);
+        console.log(introText[i])
         i++;
         if (imgArray.length == i) {
             i = 0;
         }
     }, 8000)
+

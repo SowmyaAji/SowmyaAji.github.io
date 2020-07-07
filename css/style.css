@@ -36,14 +36,18 @@ color:#fe59c2;
 
 } */
 
-
+#intro-text {
+  padding: 4rem;
+}
 .intro {
-  font-style: italic;
-   padding-right: 25px; 
+ 
+   /* padding-right: 25px; 
    background: -webkit-linear-gradient(  yellow,   ivory, cyan,white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   
+  color: black;
+  padding-left: 10px;
     
 }
 
@@ -219,16 +223,31 @@ a {
 }
 .dark { color: black;}
 
+.split {
+  height: 85%;
+  width: 50%;
+  position: fixed; 
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
  #name {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: block;
     word-wrap: break-word;
-    position: relative; 
-    padding-top: 5%;
+    /* position: relative;  */
+    /* padding-top: 5%;
     padding-left: 18%; 
     padding-right:40%; 
-  
+   */
    
     
   }
@@ -240,7 +259,6 @@ a {
     display: block;
    word-wrap: break-word;
     position: relative;
-    padding-top: 35%;
    padding-right:25%;
    
     
