@@ -1,0 +1,20 @@
+.citytime, .local {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+
+}
+
+h1, div, form {
+    text-align: center;
+}
+
+body {
+    font-size: 20px;
+}
+
+select {
+    font-size: 20px;
+    background: black;
+    color: white;
+}

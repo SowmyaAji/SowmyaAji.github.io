@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="time_converter.css">
+</head>
+
+<body>
+<a href="../index.html" style="float:right;">Home</a>
+    <h1>World Time Converter</h1>
+    <hr>
+    <div class="local">
+        <p>Local time is <span id="spanLocalTime"></span></p>
+    </div>
+
+    <div>
+        <p>Select the city you want the date and time for:</p>
+        <form action="" name="timeForm">
+            <select size=1 name="cityName">
+                <option value="60">Berlin</option>
+                <option value="330">Mumbai</option>
+                <option value="0">London</option>
+                <option value="180">Moscow</option>
+                <option value="-300" selected>New York</option>
+                <option value="60">Paris</option>
+                <option value="-480">San Fransisco</option>
+                <option value="600">Sydney</option>
+            </select>
+            <p>
+                <label for="dST">Adjust city time for Daylight Savings</label>
+                <span style="background-color: black; color: white;"> <input type="checkbox" id="dST"
+                        name="dST" /></span>
+            </p>
+
+        </form>
+    </div>
+    <br>
+    <div id="cityTime" class="citytime"></div>
+
+    <script src="timeConverter.js"></script>
+</body>
+
+</html>

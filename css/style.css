@@ -10,7 +10,10 @@ html, body {
    
 } 
 
-
+.time {
+  float: right;
+  padding-right: 40px;
+}
 h6{
   font-weight: bold;
   font-family: 'Slabo 27px', serif;
@@ -40,7 +43,6 @@ color:#fe59c2;
   padding: 4rem;
 }
 .intro {
- 
    /* padding-right: 25px; 
    background: -webkit-linear-gradient(  yellow,   ivory, cyan,white);
   -webkit-background-clip: text;
@@ -86,6 +88,7 @@ color:#fe59c2;
 
 header {
   background: transparent;
+  width: 100%;
   padding:10px;
   margin-bottom: 0;
 }
