@@ -1,4 +1,7 @@
-
+body {
+    color: white;
+    background: black;
+}
 
 img {
     float: right;
@@ -54,9 +57,14 @@ a {
     float: right;
     margin-right: 80px;
     font-size: 18px;
+    color: white;
 }
 
 wrapper {
 
     display: inline-block;
+}
+
+#mapid {
+    margin-left: 25%;
 }
