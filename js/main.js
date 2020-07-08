@@ -28,9 +28,9 @@ var images = [
 ];
 
 // image array used for the background image in the index page
-const imgArray = ['../images/paypal1.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/PayPal.jpg', '../images/kathak.jpg', '../images/back2.jpg', '../images/bulls2.jpg'];
+const imgArray = ['../images/paypal1.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/PayPal.jpg', '../images/rang.jpg', '../images/back2.jpg', '../images/kathak.jpg', '../images/blacknwhite.jpg', '../images/bulls2.jpg'];
 
-const introText = ['gone down mineshafts..', 'met a rocket scientist..', 'been in a soap opera..', 'slept in forests..', "chatted with Picasso's model..", 'wandered 7 countries..', 'flown in helicopters ..']
+const introText = ['gone down mineshafts..', 'met a rocket scientist..', 'been in a soap opera..', 'slept in forests..', "chatted with Picasso's model..", 'wandered 7 countries..', 'performed 4 dance forms', 'witnessed riots ..', 'flown in helicopters ..']
 
 let i = 0;
 
@@ -43,5 +43,5 @@ const changeImage = setInterval(
         if (imgArray.length == i) {
             i = 0;
         }
-    }, 8000)
+    }, 4000)
 
