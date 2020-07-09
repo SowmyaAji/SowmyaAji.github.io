@@ -229,6 +229,7 @@ a {
 .dark { color: black;}
 
 .split {
+  margin-top: 1rem;
   height: 85%;
   width: 50%;
   position: fixed; 
