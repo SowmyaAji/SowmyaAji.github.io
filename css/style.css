@@ -246,7 +246,7 @@ a {
 }
 
 .audio {
-   padding-top: 11rem; 
+   padding-top: 13rem; 
 }
  #name {
     height: 100%;
@@ -258,6 +258,7 @@ a {
     padding-left: 18%; 
     padding-right:40%; 
    */
+   overflow-y: hidden;
     
   }
 
