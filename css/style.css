@@ -244,6 +244,10 @@ a {
 .right {
   right: 0;
 }
+
+.audio {
+   padding-top: 11rem; 
+}
  #name {
     height: 100%;
     /* width: 100%; */
@@ -254,7 +258,6 @@ a {
     padding-left: 18%; 
     padding-right:40%; 
    */
-   
     
   }
 
