@@ -246,8 +246,11 @@ a {
 }
 
 .audio {
-   padding-top: 13rem; 
-}
+  position: absolute;
+  bottom: 2px;
+  left: 16px;
+} 
+
  #name {
     height: 100%;
     /* width: 100%; */
