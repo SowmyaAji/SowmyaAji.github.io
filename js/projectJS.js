@@ -260,10 +260,10 @@ function generateHTML() {
     let myText =
       "<html>\n<head>\n<title>My Resume</title>\n<link rel='stylesheet' type='text/css' href='../css/project.css' />\n</head>\n<body>\n";
 
-    myText += "<div>" + fullName + "</div>";
-    myText += "<div>" + fullAddress + " / " + phone + "</div>";
-    myText += "<div>" + validatedEmail + "</div>";
-    myText += "<div>" + website + "</div>";
+    myText += "<div class='name'>" + fullName + "</div>";
+    myText += "<div class='address'>" + fullAddress + " / " + phone + "</div>";
+    myText += "<div class'address'>" + validatedEmail + "</div>";
+    myText += "<div class'address'>" + website + "</div>";
     myText += "<hr>";
     myText +=
       "<div><div class='left'> CAREER SKILLS </div><div class='right'>" +
@@ -275,9 +275,9 @@ function generateHTML() {
       "</div></div><br>";
     myText +=
       "<div><div class='left'> EDUCATION </div></div>";
-      //  class='right'>" +
-      // education +
-      // "</div></div><br>";
+    //  class='right'>" +
+    // education +
+    // "</div></div><br>";
     if (eduArray.length > 0) {
       for (let i = 1; i < eduArray.length; i++) {
         let degree = eduArray[i].querySelector(".degree").value;
