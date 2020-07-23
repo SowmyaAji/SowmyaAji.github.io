@@ -258,7 +258,7 @@ function generateHTML() {
   // return html only if the email input is valid
   if (validateInput(email)) {
     let myText =
-      "<html>\n<head>\n<title>My Resume</title>\n<link rel='stylesheet' type='text/css' href='project.css' />\n</head>\n<body>\n";
+      "<html>\n<head>\n<title>My Resume</title>\n<link rel='stylesheet' type='text/css' href='../css/project.css' />\n</head>\n<body>\n";
 
     myText += "<div>" + fullName + "</div>";
     myText += "<div>" + fullAddress + " / " + phone + "</div>";
