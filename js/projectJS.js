@@ -52,8 +52,8 @@ function addEmpt() {
 
 // remove employment
 function removeEmpt() {
-  const empt = document.getElementById("empt");
-  document.getElementById("employmentDeets").removeChild(empt);
+  let emptD = document.getElementById("employmentDeets");
+  emptD.removeChild(emptD.lastElementChild);
 }
 
 // add education
@@ -130,8 +130,8 @@ function addEdu() {
 
 // remove education
 function removeEdu() {
-  const edu = document.getElementById("edu");
-  document.getElementById("educationDeets").removeChild(edu);
+  let eduD = document.getElementById("educationDeets");
+  eduD.removeChild(eduD.lastElementChild);
 }
 
 function validateInput(email) {
