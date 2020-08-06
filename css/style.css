@@ -14,6 +14,11 @@ html, body {
   float: right;
   padding-right: 40px;
 }
+.kicker {
+  color: white;
+  font-size: 25px;
+  padding-left: 10rem;
+}
 h6{
   font-weight: bold;
   font-family: 'Slabo 27px', serif;
@@ -601,3 +606,4 @@ pre {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
  }
+
