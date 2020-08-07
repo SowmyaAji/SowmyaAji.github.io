@@ -48,16 +48,17 @@ color:#fe59c2;
 #intro-text {
   padding: 4rem;
 }
-.intro {
+#intro {
    /* padding-right: 25px; 
    background: -webkit-linear-gradient(  yellow,   ivory, cyan,white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   
-  color: white;
+  color: red;
   position: absolute;
-  right: 20px;
-    
+  right: 20px;  
+  z-index: 2;
+  top: -0.25rem;
 }
 .indent {
   margin-left: 35%;
@@ -253,7 +254,7 @@ a {
 
 .audio {
   position: absolute;
-  bottom: 2px;
+ bottom:-1rem;
   left: 16px;
 } 
 
