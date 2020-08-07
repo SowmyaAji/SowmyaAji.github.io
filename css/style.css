@@ -54,14 +54,11 @@ color:#fe59c2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   
-  color: brown;
- 
-  padding-left: 10px;
-  
-  
+  color: white;
+  position: absolute;
+  right: 20px;
     
 }
-
 .indent {
   margin-left: 35%;
 }
