@@ -57,9 +57,7 @@ color:#fe59c2;
   color: white;
   position: absolute;
   right:0;
-  z-index: 2;
-
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.20);
   margin: 0;
 }
 
@@ -260,7 +258,7 @@ a {
   position: absolute;
  bottom:-1rem;
   left: 16px;
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.20);
 } 
 
  #name {
