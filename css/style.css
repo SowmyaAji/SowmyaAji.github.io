@@ -60,6 +60,20 @@ color:#fe59c2;
   z-index: 2;
   top: -0.25rem;
 }
+
+.about-button {
+  margin-top:1%;
+    
+    padding-top:0;
+    padding-bottom:0;
+    background: transparent;
+    
+    font-size: 16px; 
+    
+    /* text-decoration: underline; */
+    border-radius: 260px;
+  color: red;
+}
 .indent {
   margin-left: 35%;
 }
