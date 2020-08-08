@@ -252,7 +252,6 @@ function generateHTML() {
   const employments = document.getElementById("employmentDeets").childNodes;
 
   const empArray = [...employments];
-  const references = document.getElementById("references").value;
   const bizReferences = document.getElementById("bizReferences").value;
 
   // return html only if the email input is valid
@@ -270,7 +269,7 @@ function generateHTML() {
       career +
       "</div></div><br>";
     myText +=
-      "<div><div class='left'> PERSONAL DATA </div><div class='right'>" +
+      "<div><div class='left'> ABOUT ME </div><div class='right'>" +
       personal +
       "</div></div><br>";
     myText +=
@@ -299,11 +298,6 @@ function generateHTML() {
         myText += getEmployment(startDate, endDate, employment);
       }
     }
-
-    myText +=
-      "<div><div class='left'> CHARACTER REFERENCES </div><div class='right'>" +
-      references +
-      "</div></div><br>";
     myText +=
       "<div><div class='left'> BUSINESS REFERENCES </div><div class='right'>" +
       bizReferences +
