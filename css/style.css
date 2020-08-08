@@ -54,17 +54,20 @@ color:#fe59c2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   
-  color: red;
+  color: white;
   position: absolute;
-  right: 20px;  
+  right:0;
   z-index: 2;
-  top: -0.25rem;
+
+  background: rgba(0, 0, 0, 0.10);
+  margin: 0;
 }
 
 .indent {
   margin-left: 35%;
 }
-  
+
+
 @media (max-width: 1270px) {
 .intro {
   font-style: italic;
@@ -257,6 +260,7 @@ a {
   position: absolute;
  bottom:-1rem;
   left: 16px;
+  background: rgba(0, 0, 0, 0.10);
 } 
 
  #name {
