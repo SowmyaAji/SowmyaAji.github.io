@@ -28,9 +28,9 @@ var images = [
 ];
 
 // image array used for the background image in the index page
-const imgArray = ['../images/paypal1.jpeg', '../images/tree.jpg', '../images/panda.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/Sri.jpeg', '../images/forest1.jpg', '../images/PayPal.jpg', '../images/rang.jpg', '../images/back2.jpg', '../images/kathak.jpg', '../images/blacknwhite.jpg', '../images/bulls2.jpg'];
+const imgArray = ['../images/mineshaft.jpg', '../images/paypal1.jpeg', '../images/web.jpeg', '../images/tree.jpg', '../images/panda.jpeg', '../images/Read.jpg', '../images/side.jpg', '../images/Sri.jpeg', '../images/forest1.jpg', '../images/PayPal.jpg', '../images/rang.jpg', '../images/back2.jpg', '../images/kathak.jpg', '../images/blacknwhite.jpg', '../images/bulls2.jpg'];
 
-const introText = ['gone down mineshafts..', 'scaled trees', 'met a rocket scientist..', 'written three novels', 'acted in a soap opera..', 'interviewed 4 Prime Ministers', 'slept in forests..', "worked in corporate houses", "hung out with Picasso's model..", 'wandered 7 countries..', 'performed 4 dance forms', 'witnessed riots ..', 'flown in helicopters ..']
+const introText = ['gone down mineshafts.', 'a passion for code.', 'hosted web and radio shows.', 'aspired to scale trees.', 'met a rocket scientist.', 'written three novels.', 'acted in a soap opera.', 'interviewed 4 Prime Ministers', 'slept in forests.', "worked in corporate houses", "hung out with Picasso's model.", 'wandered 7 countries.', 'performed 4 dance forms', 'witnessed riots.', 'flown in helicopters.']
 
 let i = 0;
 
