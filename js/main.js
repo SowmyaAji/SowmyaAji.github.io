@@ -50,13 +50,13 @@ function alertWindow() {
     let newLine = "\r\n"
     const answer = prompt("Guess the lie! Type the line number:  " + newLine + "1. I have flown in helicopters." + newLine + "2. I have gone down mineshafts." + newLine + "3. I have a passion for code." + newLine + "4. I have hosted web and radio shows." + newLine + "5. I have scaled trees." + newLine + "6. I have met a rocket scientist." + newLine + "7. I have written three novels." + newLine + "8. I have acted in a soap opera." + newLine + "9. I have interviewed 4 Prime Ministers" + newLine + "10. I have slept in forests." + newLine + "11. I have worked in corporate houses." + newLine + "12. I have hung out with Picasso's model." + newLine + "13. I have performed 4 dance forms." + newLine + "14. I have witnessed riots." + newLine + "15. I have built 16 apps.")
     if (answer == null || "") {
-        txt = "Hey, do play! Or check out the About me blue for clues! Or click on my name for my resume!"
+        txt = "Hey, do play! Or check out the About Me below for clues! Or click on my name for my resume!"
     }
     else if (answer === "5") {
-        txt = "You got that right! Do see the About me  below for more or click on my name for my resume!"
+        txt = "You got that right! I have not scaled trees, though I aspire to. Do see the About Me  below or click on my name for my resume."
     }
     else {
-        txt = "You got that wrong! Do see the About me for clues or click on my name for my resume and play again!"
+        txt = "You got that wrong! Do see the About Me for clues or click on my name for my resume and play again!"
     }
     $("#answer").html(txt);
     setTimeout(function () {
