@@ -56,7 +56,7 @@ function alertWindow() {
         txt = "You got that right! I have not scaled trees, though I aspire to. Do see the About Me  below or click on my name for my resume."
     }
     else {
-        txt = "You got that wrong! Do see the About Me for clues or click on my name for my resume and play again!"
+        txt = "You got that wrong! Do see the About Me for clues or click on my name for my resume. And click play again!"
     }
     $("#answer").html(txt);
     setTimeout(function () {
