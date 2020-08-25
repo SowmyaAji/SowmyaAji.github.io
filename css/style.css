@@ -57,7 +57,8 @@ color:#fe59c2;
   color: white;
   position: absolute;
   right:0;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.60);
+ 
   margin: 0;
 }
 #play {
