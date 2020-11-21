@@ -66,3 +66,4 @@ function alertWindow() {
     }, 7000)
 
 }
+
