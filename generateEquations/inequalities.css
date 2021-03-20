@@ -12,6 +12,8 @@ input {
 
 h1 {
   font-style: italic;
-  text-align: center;
+  padding-left: 4rem;
   font-size: 35px;
+  color: white;
+  background-color: purple;
 }
