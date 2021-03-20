@@ -41,8 +41,6 @@ let eq2Text = [
 const currentEq = (arr) => arr[Math.floor(Math.random() * arr.length)];
 let eq1 = currentEq(eq1Text);
 let eq2 = currentEq(eq2Text);
-let eq3 = currentEq(eq3Text);
-let eq4 = currentEq(eq4Text);
 
 document.getElementById("equation").innerHTML = `
 Equation 1: ${eq1} <br> 
