@@ -2,32 +2,39 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max)) + 1;
 }
 
-let number = getRandomInt(20);
-let number1 = getRandomInt(20);
-let x = getRandomInt(20);
-let y = getRandomInt(20);
-let z = getRandomInt(20);
+let number = getRandomInt(15);
+console.log(number);
+let number1 = getRandomInt(15);
+console.log(number1);
+let x = getRandomInt(15);
+let y = getRandomInt(15);
+if (y === x) {
+  console.log("Y is equal to X: " + "X: " + x + " Y: " + y);
+  y = getRandomInt(15);
+  console.log(`New Y: ${y}`);
+}
+console.log("We are the variables: {" + x + " " + y + "}");
 
-let number2 = number * x + number1 * y;
-let number3 = number * x - number1 * y;
-let number4 = (number + z) * x - (number1 + z) * y;
-let number5 = (number + z) * x + (number1 + z) * y;
+let inEq1 = number * x + number * y;
+let inEq2 = number1 * y + (number - y);
+let inEq3 = number * y - number + y;
+let inEq4 = number1 * x - number1 + x;
 
 let eq1Text = [
-  `${number}x + ${number1}y = ${number2}`,
-  `${number + z}x - ${number1 + z}y = ${number4}`,
+  `${number}( x + ${y} ) > ${inEq1}`,
+  `${number}x - ${number + y} >= ${inEq3}`,
 ];
 
 let eq2Text = [
-  `${number}x - ${number1}y = ${number3}`,
-  `${number + z}x + ${number1 + z}y = ${number5}`,
+  `${number1}x + ${number - y} < ${inEq2}`,
+  `${number1}x - ${number1 + x} <= ${inEq4}`,
 ];
 
 const currentEq = (arr) => arr[Math.floor(Math.random() * arr.length)];
 let eq1 = currentEq(eq1Text);
 let eq2 = currentEq(eq2Text);
 
-document.getElementById("equation").innerHTML = `
+document.getElementById("inequal").innerHTML = `
 Equation 1: ${eq1} <br> 
 Equation 2: ${eq2}`;
 
@@ -38,9 +45,10 @@ function checkAnswers() {
   let answerY = +document.getElementById("myY").value;
   console.log(answerY, typeof answerY);
   console.log(answerX, typeof answerX);
-  console.log("I'm x: " + x);
+  console.log("I'm at answerX: " + x);
+  console.log("Im at answerY: " + y);
   if (answerX === x && answerY === y) {
-    document.getElementById("response").innerHTML = `Yes!!! That's the answer!`;
+    document.getElementById("response").innerHTML = `Yes! You got that right!`;
   } else {
     document.getElementById(
       "response"
@@ -50,35 +58,24 @@ function checkAnswers() {
   }
   document.getElementById("next").style.display = "inline-block";
 }
-let equivalences = {
-  x: " * " + x,
-  y: " * " + y,
-};
+// let equivalences = {
+//   x: " * " + x,
+//   y: " * " + y,
+// };
 
-let solved = (eq) =>
-  eq.replace(/x|y/g, function (matched) {
-    return equivalences[matched];
-  });
+// let solved = (eq) =>
+//   eq.replace(/x|y/g, function (matched) {
+//     return equivalences[matched];
+//   });
 
 document.getElementById("add").innerHTML = "";
 function display() {
   document.getElementById("add").innerHTML = `Answers:<br><br>
-  { x = ${x}, y = ${y} } <br>
-  <br>
-  Solutions:<br><br>
-  Equation 1: ${eq1} <br>
-  Solved: ${solved(eq1)} <br>
-  <br>
-  Equation 2: ${eq2}<br>
-  Solved: ${solved(eq2)} <br>
-  <br>
-  Methods:<br><br> 
-  1. Substitution <br>
-  <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/x2f8bb11595b61c86:solving-systems-of-equations-with-substitution/v/solving-systems-with-substitution" target="_blank">Tutorial</a><br><br>
-  2. Elimination <br>
-  <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/x2f8bb11595b61c86:solving-systems-elimination/v/simple-elimination-practice" target="_blank">Tutorial</a><br><br>
-  3. Graphing <br>
-  <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/solving-linear-systems-by-graphing" target="_blank">Tutorial</a><br>  
+  {  ${x}, ${y} } <br><br>
+   How to solve linear inequalities:<br><br>
+
+   <a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice/new-sat-heart-of-algebra/v/sat-math-h6-easier" target="_blank">Tutorial</a>
+  <br>  
   `;
 }
 function addListener(obj, type, fn) {

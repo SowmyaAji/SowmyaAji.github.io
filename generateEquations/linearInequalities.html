@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Inequalities</title>
+    <link rel="stylesheet" href="inequalities.css" />
+  </head>
+
+  <body>
+    <h1>MathwithMe! :: Linear Inequalities</h1>
+    <br />
+    <hr />
+    <a href="twoVariableEquations.html">Solve two variable equations</a>
+    <div id="main">
+      <p>Solve this set of linear inequalities:</p>
+      <p id="inequal"></p>
+      <form
+        action=""
+        name="xyForm"
+        style="font-family: monospace; margin-left: 3rem"
+      >
+        <p>
+          Write the lesser value of x in the first box and the greater value of
+          x in the second box. We are not using interval notation here, so do
+          not mention the infinity values for either.
+        </p>
+        <p>
+          <label for="x"> x < </label>
+          <input type="text" name="x" placeholder="x < " id="myX" />
+        </p>
+        <p>
+          <label for="y"> x > </label>
+          <input type="text" name="y" placeholder="x > " id="myY" />
+        </p>
+        <input type="button" value="Submit Answers" name="answer" id="answer" />
+      </form>
+      <p id="response"></p>
+      <button id="display" style="display: none" onClick="display()">
+        Get Answers
+      </button>
+      <p id="add"></p>
+      <button
+        id="next"
+        style="display: none"
+        onClick="window.location.href=window.location.href"
+      >
+        Go To Next Equation Set
+      </button>
+    </div>
+
+    <script src="inequalities.js"></script>
+  </body>
+</html>
