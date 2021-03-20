@@ -24,10 +24,12 @@ let eq2Text = [
 ];
 
 const currentEq = (arr) => arr[Math.floor(Math.random() * arr.length)];
+let eq1 = currentEq(eq1Text);
+let eq2 = currentEq(eq2Text);
 
 document.getElementById("equation").innerHTML = `
-Equation 1: ${currentEq(eq1Text)} <br> 
-Equation 2: ${currentEq(eq2Text)}`;
+Equation 1: ${eq1} <br> 
+Equation 2: ${eq2}`;
 
 document.getElementById("response").innerHTML = "";
 
@@ -48,10 +50,36 @@ function checkAnswers() {
   }
   document.getElementById("next").style.display = "inline-block";
 }
+let equivalences = {
+  x: " * " + x,
+  y: " * " + y,
+};
+
+let solved = (eq) =>
+  eq.replace(/x|y/g, function (matched) {
+    return equivalences[matched];
+  });
 
 document.getElementById("add").innerHTML = "";
 function display() {
-  document.getElementById("add").innerHTML = `Answers:  x = ${x}, y = ${y}`;
+  document.getElementById("add").innerHTML = `Answers:<br><br>
+  { x = ${x}, y = ${y} } <br>
+  <br>
+  Solutions:<br><br>
+  Equation 1: ${eq1} <br>
+  Solved: ${solved(eq1)} <br>
+  <br>
+  Equation 2: ${eq2}<br>
+  Solved: ${solved(eq2)} <br>
+  <br>
+  Methods:<br><br> 
+  1. Substitution <br>
+  <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/x2f8bb11595b61c86:solving-systems-of-equations-with-substitution/v/solving-systems-with-substitution" target="_blank">Tutorial</a><br><br>
+  2. Elimination <br>
+  <a href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:systems-of-equations/x2f8bb11595b61c86:solving-systems-elimination/v/simple-elimination-practice" target="_blank">Tutorial</a><br><br>
+  3. Graphing <br>
+  <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/solving-linear-systems-by-graphing" target="_blank">Tutorial</a><br>  
+  `;
 }
 function addListener(obj, type, fn) {
   // if browser supports event listener
