@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Variable Equations</title>
+    <link rel="stylesheet" href="inequalities.css" />
+  </head>
+
+  <body>
+    <h1>MathwithMe! :: 3 Variables</h1>
+    <br />
+    <hr />
+    <a href="linearInequalities.html">Go to solve linear inequalities</a><br />
+    <a href="twoVariableEquations.html">Go to solve two variable equations</a>
+    <div id="main">
+      <p>Solve this set of equations:</p>
+      <p id="equation"></p>
+      <form
+        action=""
+        name="xyForm"
+        style="font-family: monospace; margin-left: 3rem"
+      >
+        <p>
+          <label for="x">x = </label>
+          <input type="text" name="x" placeholder="x" id="myX" />
+        </p>
+        <p>
+          <label for="y">y = </label>
+          <input type="text" name="y" placeholder="y" id="myY" />
+        </p>
+        <p>
+          <label for="z">z = </label>
+          <input type="text" name="z" placeholder="z" id="myZ" />
+        </p>
+        <input type="button" value="Submit Answers" name="answer" id="answer" />
+      </form>
+      <p id="response"></p>
+      <button id="display" style="display: none" onClick="display()">
+        Get Answers
+      </button>
+      <p id="add"></p>
+      <button
+        id="next"
+        style="display: none"
+        onClick="window.location.href=window.location.href"
+      >
+        Go To Next Equation Set
+      </button>
+    </div>
+
+    <script src="threeVariables.js"></script>
+  </body>
+</html>

@@ -68,10 +68,21 @@ function checkAnswers() {
 //     return equivalences[matched];
 //   });
 
+function result() {
+  let result = "";
+  if (x < y) {
+    result = `This is an OR inequality.`;
+  } else {
+    result = `The solution is all real numbers`;
+  }
+  return result;
+}
+
 document.getElementById("add").innerHTML = "";
 function display() {
   document.getElementById("add").innerHTML = `Answers:<br><br>
   {  ${x}, ${y} } <br><br>
+  ${result()} <br><br>
    How to solve linear inequalities:<br><br>
 
    <a href="https://www.khanacademy.org/test-prep/sat/sat-math-practice/new-sat-heart-of-algebra/v/sat-math-h6-easier" target="_blank">Tutorial</a>
